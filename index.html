@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for repo in site.github.public_repositories %}
+      [{{ repo.name }}]({{ repo.html_url }})
+    {% endfor %}   
+  </ul>
+</div>

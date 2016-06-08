@@ -8,7 +8,7 @@ Showcasing the best from andela
 ```bash
   $ git clone git@github.com:andela/fruitjuice.git
   $ bundle install
-  $ rake --tasks # lists to tasks 
+  $ rake --tasks # list tasks 
   $ rake run # serve locally
 ```
 

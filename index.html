@@ -5,10 +5,26 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
+  <div class="special-repos-outer">
+    <div class="hs-page-width-normal">
+      <div id="special-repos">
+      </div>
+    </div>
+  </div>
+
+  <div class="hs-page-width-normal">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="hs-doc-content">
+          <div id="repos"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <ul class="post-list">
-    {% for repo in site.github.public_repositories %}
-      [{{ repo.name }}]({{ repo.html_url }})
-    {% endfor %}   
+
   </ul>
+
+
 </div>

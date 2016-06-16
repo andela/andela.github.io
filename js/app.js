@@ -5,11 +5,11 @@
     var specialRepos;
 
     specialRepos = {
-        vex: {
+        potatoORM: {
             icon: 'vex',
-            casedTitle: 'Vex'
+            casedTitle: 'Potato'
         },
-        odometer: {
+        naemoji: {
             icon: 'odometer',
             casedTitle: 'Odometer'
         },
@@ -92,10 +92,11 @@
     }
 
     function addRepo(repo, index) {
-        var specialRepoNameLookup = repo.full_name.substr('Andela/'.length);
+        var specialRepoNameLookup = repo.full_name.substr('andela-cvundi/'.length);
+
         var specialRepo = specialRepos[specialRepoNameLookup];
         var homepage = repo.homepage || ('/' + specialRepoNameLookup);
-        var description = repo.description.replace('#hubspot-open-source', '');
+        var description = repo.description.replace('#opensource', '');
         var stargazersString = repo.stargazers_count.toString().replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
         if (!specialRepo) {
@@ -199,7 +200,7 @@
         return unescape(output);
     }
 
-    // For JSONP fromhttp://static.hsappstatic.net/hubspotdev-github-data-cache/ex/hubspot-filtered-org-data.json
+    // Get JSON data from the data folder containing repo info
     var data = {{ site.data | jsonify }}
     $(function() {
         addRepos(data.repos);

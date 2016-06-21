@@ -33,13 +33,6 @@
 
         repos = temp_repos;
 
-        // Sort by highest # of watchers.
-        repos.sort(function (a, b) {
-            if (a.hotness < b.hotness) return 1;
-            if (b.hotness < a.hotness) return -1;
-            return 0;
-        });
-
         $.each(repos, function (index, repo) {
             addRepo(repo, index);
         });

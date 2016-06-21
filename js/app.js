@@ -30,7 +30,6 @@
                 temp_repos.push(repo);
             }
         });
-        console.log(temp_repos);
 
         repos = temp_repos;
 

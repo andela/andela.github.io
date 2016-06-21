@@ -904,7 +904,7 @@ site_admin: false
 },
 private: false,
 html_url: "https://github.com/andela-cvundi/Na-Emoji",
-description: "RESTFUL emoji service using Slim framework",
+description: "RESTFUL emoji service using Slim framework #opensource",
 fork: false,
 url: "https://api.github.com/repos/andela-cvundi/Na-Emoji",
 forks_url: "https://api.github.com/repos/andela-cvundi/Na-Emoji/forks",

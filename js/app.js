@@ -9,41 +9,13 @@
             icon: 'vex',
             casedTitle: 'Potato'
         },
-        naemoji: {
+        'Na-Emoji': {
             icon: 'odometer',
-            casedTitle: 'Odometer'
+            casedTitle: 'Na-emoji'
         },
-        messenger: {
+        node: {
             icon: 'messenger',
-            casedTitle: 'Messenger'
-        },
-        tether: {
-            icon: 'tether',
-            casedTitle: 'Tether'
-        },
-        drop: {
-            icon: 'drop',
-            casedTitle: 'Drop'
-        },
-        select: {
-            icon: 'select',
-            casedTitle: 'Select'
-        },
-        tooltip: {
-            icon: 'tooltip',
-            casedTitle: 'Tooltip'
-        },
-        shepherd: {
-            icon: 'shepherd',
-            casedTitle: 'Shepherd'
-        },
-        Singularity: {
-            icon: 'singularity',
-            casedTitle: 'Singularity'
-        },
-        'general-store': {
-          icon: 'general-store',
-          casedTitle: 'General Store'
+            casedTitle: 'Node'
         }
     };
 
@@ -115,18 +87,21 @@
             $('#repos').append($item);
         } else {
             var $specialRepo = $('' +
-                '<div class="special-repo">' +
-                    '<a href="' + homepage + '" class="os-icon-wrapper"><span class="os-icon os-icon-small ' + specialRepo.icon + '-icon"></span></a>' +
-                    '<div class="css special-repo-inner">' +
-                        '<h2><a href="' + homepage + '">' + specialRepo.casedTitle + '</a></h2>' +
-                        '<p>' + description + '</p>' +
-                        '<div class="special-repo-bottom">' +
-                            '<div class="stargazers"><a href="' + repo.html_url + '">GitHub &#9733; ' + stargazersString + '</a></div>' +
+                '<div class="thumb-containers" style="background-image: url(/os-icons/' + specialRepo.icon + '-icon.png)">' +
+                    '<div id="hidden_element">' +
+                        '<div class="image-holder">' +
+                            '<img src="/os-icons/' + specialRepo.icon + '-icon.png">' +
                         '</div>' +
+                        '<h4>' + specialRepo.casedTitle + '</h4>' +
+                        '<hr>' +
+                        '<p>' + description + '</p>' +
+                        '<hr>' +
+                        '<p><span class="executer-tag">' + specialRepo.casedTitle + '</span> <span class="executer-tag"> mobile </span> <span class="executer-tag"> andela </span></p>' +
+                        '<a href="#" class="executer-preview">PREVIEW</a>' +
                     '</div>' +
                 '</div>' +
             '');
-            $('#special-repos').append($specialRepo);
+            $('.thumbnails').append($specialRepo);
         }
     }
 

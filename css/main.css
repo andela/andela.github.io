@@ -18,7 +18,7 @@ h4 {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
-  body a, body a:hover, body .projects .thumbnails .thumb-containers .card-content a, body .projects .empty-thumbnails .thumb-containers .card-content a, body .projects .see-more-projects-container .see-more-projects {
+  body a, body a:hover, body .projects .thumbnails [class*="thumb-containers"] .card-content a, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a, body .projects .see-more-projects-container .see-more-projects {
     font-weight: 500;
     background-color: #3359DF;
     border: none;
@@ -30,7 +30,7 @@ body {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer; }
-  body a:hover, body .projects .thumbnails .thumb-containers .card-content a:hover, body .projects .empty-thumbnails .thumb-containers .card-content a:hover, body .projects .see-more-projects-container .see-more-projects:hover {
+  body a:hover, body .projects .thumbnails [class*="thumb-containers"] .card-content a:hover, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a:hover, body .projects .see-more-projects-container .see-more-projects:hover {
     background-color: #5f7de6; }
   body .hero {
     color: white;
@@ -48,44 +48,48 @@ body {
       margin: 4%; }
     body .projects .thumbnails, body .projects .empty-thumbnails {
       display: flex; }
-      body .projects .thumbnails .thumb-containers, body .projects .empty-thumbnails .thumb-containers {
+      body .projects .thumbnails [class*="thumb-containers"], body .projects .empty-thumbnails [class*="thumb-containers"] {
         display: inline-block;
         width: 30%;
         margin-left: 2%;
         border: 1px solid #e3e3e3; }
-        body .projects .thumbnails .thumb-containers .image-holder, body .projects .empty-thumbnails .thumb-containers .image-holder {
+        body .projects .thumbnails [class*="thumb-containers"] .image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .image-holder, body .projects .thumbnails [class*="thumb-containers"] .executer-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .executer-image-holder, body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
           display: flex;
           height: 200px;
-          background-image: radial-gradient(150% 100%, #A5C4C7 0%, #103040 100%); }
-          body .projects .thumbnails .thumb-containers .image-holder img, body .projects .empty-thumbnails .thumb-containers .image-holder img {
+          background-image: radial-gradient(150% 100%, rgba(102, 187, 106, 0.6) 0%, #2D7362 100%); }
+          body .projects .thumbnails [class*="thumb-containers"] .image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .image-holder img, body .projects .thumbnails [class*="thumb-containers"] .executer-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .executer-image-holder img, body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder img, body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder img {
             width: 100px;
             margin: auto; }
-        body .projects .thumbnails .thumb-containers .card-content, body .projects .empty-thumbnails .thumb-containers .card-content {
+        body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
+          background-image: radial-gradient(150% 100%, rgba(185, 102, 187, 0.69) 0%, #732d67 100%); }
+        body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
+          background-image: radial-gradient(150% 100%, rgba(4, 169, 255, 0) 0%, rgba(3, 169, 244, 0.79) 100%); }
+        body .projects .thumbnails [class*="thumb-containers"] .card-content, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content {
           margin-bottom: 10%; }
-          body .projects .thumbnails .thumb-containers .card-content h2, body .projects .empty-thumbnails .thumb-containers .card-content h2 {
+          body .projects .thumbnails [class*="thumb-containers"] .card-content h2, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
             font-weight: 100;
             padding: 0px 20px;
             border-left: 2px solid black; }
-          body .projects .thumbnails .thumb-containers .card-content p, body .projects .empty-thumbnails .thumb-containers .card-content p {
+          body .projects .thumbnails [class*="thumb-containers"] .card-content p, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content p {
             height: 50px;
             padding: 0px 20px;
             margin: 0;
             font-weight: 100;
             font-size: .8em; }
-          body .projects .thumbnails .thumb-containers .card-content .tags, body .projects .empty-thumbnails .thumb-containers .card-content .tags {
+          body .projects .thumbnails [class*="thumb-containers"] .card-content .tags, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags {
             margin: 20px 0px; }
-            body .projects .thumbnails .thumb-containers .card-content .tags span, body .projects .empty-thumbnails .thumb-containers .card-content .tags span {
+            body .projects .thumbnails [class*="thumb-containers"] .card-content .tags span, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags span {
               margin-top: 300px;
               text-transform: uppercase;
               padding-right: 5px;
               font-size: .5em;
               font-weight: 700; }
-              body .projects .thumbnails .thumb-containers .card-content .tags span::before, body .projects .empty-thumbnails .thumb-containers .card-content .tags span::before {
+              body .projects .thumbnails [class*="thumb-containers"] .card-content .tags span::before, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags span::before {
                 content: "\03bf ";
                 font-weight: 100;
                 font-size: .3em;
                 padding: 0px 3px; }
-          body .projects .thumbnails .thumb-containers .card-content a, body .projects .empty-thumbnails .thumb-containers .card-content a, body .projects .thumbnails .thumb-containers .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .thumbnails .thumb-containers .card-content .see-more-projects, body .projects .empty-thumbnails .thumb-containers .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .empty-thumbnails .thumb-containers .card-content .see-more-projects {
+          body .projects .thumbnails [class*="thumb-containers"] .card-content a, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a, body .projects .thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .thumbnails [class*="thumb-containers"] .card-content .see-more-projects, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects {
             font-weight: 200;
             box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
             border-radius: 4px;
@@ -102,13 +106,14 @@ body {
         background-size: cover; }
     body .projects .see-more-projects-container {
       display: flex;
-      position: relative;
-      margin: 0 auto; }
+      margin-top: 5%; }
       body .projects .see-more-projects-container .see-more-projects {
+        pointer-events: none;
+        background-color: grey;
         text-align: center;
         display: inline-block;
         width: 20%;
-        margin: 50px;
+        margin: 0 auto;
         padding: 20px; }
   body section {
     height: 30%;
@@ -163,5 +168,4 @@ body {
         margin-bottom: 20px; }
       body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
         width: 15%; }
-
-/*# sourceMappingURL=main.css.map */
+        

@@ -15,8 +15,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andela.com" # the base hostname & protocol for your site
 twitter: andela
 github: andela
+repository: andela/fruitjuice 
 
 # Build settings
 markdown: kramdown
-gems: ['jeykll-github-metadata']
+gems: ['jekyll-github-metadata']
+
 

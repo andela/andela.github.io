@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,900);
+.wrapper{
+     max-width: 100%;
+     margin-right: auto;
+     margin-left: auto;
+     padding-right: 0;
+     padding-left: 0;
+}
+.page-content{
+  padding: 0;
+}
+
+h3, body section h3 {
+  font-weight: 100;
+  color: #757F8F;
+  text-align: center;
+  font-size: 1.5em; }
+
+h4 {
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3em; }
+
+/*Colors*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+  body a, body a:hover, body .projects .thumbnails [class*="thumb-containers"] .card-content a, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a, body .projects .see-more-projects-container .see-more-projects {
+    font-weight: 500;
+    background-color: #3359DF;
+    border: none;
+    width: 30%;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer; }
+  body a:hover, body .projects .thumbnails [class*="thumb-containers"] .card-content a:hover, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a:hover, body .projects .see-more-projects-container .see-more-projects:hover {
+    background-color: #5f7de6; }
+  body .hero {
+    color: white;
+    text-align: center;
+    padding: 200px 60px;
+    font-weight: 400;
+    font-size: 1.6em;
+    background: url("../images/hero.jpg") no-repeat center;
+    background-size: cover; }
+  body .projects {
+    background-color: #FBFBFB;
+    padding: 30px 80px;
+    padding-bottom: 80px; }
+    body .projects h3 {
+      margin: 4%; }
+    body .projects .thumbnails, body .projects .empty-thumbnails {
+      display: flex; }
+      body .projects .thumbnails [class*="thumb-containers"], body .projects .empty-thumbnails [class*="thumb-containers"] {
+        display: inline-block;
+        width: 30%;
+        margin-left: 2%;
+        border: 1px solid #e3e3e3; }
+        body .projects .thumbnails [class*="thumb-containers"] .image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .image-holder, body .projects .thumbnails [class*="thumb-containers"] .executer-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .executer-image-holder, body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
+          display: flex;
+          height: 200px;
+          background-image: radial-gradient(150% 100%, rgba(102, 187, 106, 0.6) 0%, #2D7362 100%); }
+          body .projects .thumbnails [class*="thumb-containers"] .image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .image-holder img, body .projects .thumbnails [class*="thumb-containers"] .executer-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .executer-image-holder img, body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder img, body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder img, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder img {
+            width: 100px;
+            margin: auto; }
+        body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
+          background-image: radial-gradient(150% 100%, rgba(185, 102, 187, 0.69) 0%, #732d67 100%); }
+        body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
+          background-image: radial-gradient(150% 100%, rgba(4, 169, 255, 0) 0%, rgba(3, 169, 244, 0.79) 100%); }
+        body .projects .thumbnails [class*="thumb-containers"] .card-content, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content {
+          margin-bottom: 10%; }
+          body .projects .thumbnails [class*="thumb-containers"] .card-content h2, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
+            font-weight: 100;
+            padding: 0px 20px;
+            border-left: 2px solid black; }
+          body .projects .thumbnails [class*="thumb-containers"] .card-content p, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content p {
+            height: 50px;
+            padding: 0px 20px;
+            margin: 0;
+            font-weight: 100;
+            font-size: .8em; }
+          body .projects .thumbnails [class*="thumb-containers"] .card-content .tags, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags {
+            margin: 20px 0px; }
+            body .projects .thumbnails [class*="thumb-containers"] .card-content .tags span, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags span {
+              margin-top: 300px;
+              text-transform: uppercase;
+              padding-right: 5px;
+              font-size: .5em;
+              font-weight: 700; }
+              body .projects .thumbnails [class*="thumb-containers"] .card-content .tags span::before, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .tags span::before {
+                content: "\03bf ";
+                font-weight: 100;
+                font-size: .3em;
+                padding: 0px 3px; }
+          body .projects .thumbnails [class*="thumb-containers"] .card-content a, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content a, body .projects .thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .thumbnails [class*="thumb-containers"] .card-content .see-more-projects, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, body .projects .see-more-projects-container .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects {
+            font-weight: 200;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+            border-radius: 4px;
+            width: 50%;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 0px 20px;
+            font-weight: 500; }
+    body .projects .empty-thumbnails {
+      margin-top: 30px;
+      height: 370px; }
+      body .projects .empty-thumbnails .thumb-containers {
+        background: url("../images/coming_soon.png") repeat center;
+        background-size: cover; }
+    body .projects .see-more-projects-container {
+      display: flex;
+      margin-top: 5%; }
+      body .projects .see-more-projects-container .see-more-projects {
+        pointer-events: none;
+        background-color: grey;
+        text-align: center;
+        display: inline-block;
+        width: 20%;
+        margin: 0 auto;
+        padding: 20px; }
+  body section {
+    height: 30%;
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 40px 50px; }
+    body section h3 {
+      font-weight: 700;
+      color: #3A3A3A;
+      font-size: 2em; }
+    body section input {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      box-sizing: border-box; }
+    body section button {
+      padding: 15px 20px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: none;
+      width: 10%;
+      background-color: #3d3d3d;
+      font-size: .8em;
+      text-transform: uppercase; }
+  body footer {
+    display: inline-block;
+    font-size: .8em;
+    color: #5D5D5D;
+    height: 200px;
+    background-color: #16171D;
+    padding: 40px;
+    text-align: left; }
+    body footer span {
+      display: block; }
+    body footer h4 {
+      color: white;
+      text-align: left; }
+    body footer div[class$="footer"] {
+      width: 25%;
+      padding: 25px 25px;
+      display: inline-block;
+      margin-right: 30px; }
+    body footer .andela-footer {
+      color: #9B9B9B; }
+      body footer .andela-footer img {
+        display: block;
+        width: 30%;
+        margin-bottom: 20px; }
+      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+        width: 15%; }

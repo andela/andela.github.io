@@ -153,7 +153,7 @@ a:hover {
 }
 
 #preview {
-  margin-bottom: -40px;
+  margin-bottom: -44px;
   text-align: center;
 }
 
@@ -254,4 +254,33 @@ section#hero.container {
     margin-bottom: -80px;
   }
 }
-
+  body footer {
+    display: inline-block;
+    font-size: .8em;
+    color: #5D5D5D;
+    height: 100%;
+    background-color: #16171D;
+    padding: 40px;
+    text-align: center; }
+    body footer span {
+      display: block; }
+    body footer h4 {
+      color: white;
+      text-align: left; }
+    body footer div[class$="footer"] {
+      width: 25%;
+      padding: 25px 25px;
+      display: inline-block;
+      margin-right: 30px; 
+      text-align: left;
+    }
+    body footer .andela-footer {
+      color: #9B9B9B; 
+    }
+      body footer .andela-footer img {
+        display: block;
+        width: 30%;
+        margin-bottom: 20px; }
+      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+        width: 15%; 
+      }

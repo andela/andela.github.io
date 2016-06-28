@@ -1,0 +1,127 @@
+/* Stylesheet for Executer */
+@import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
+.wrapper{
+
+     max-width: 100%;
+     margin-right: auto;
+     margin-left: auto;
+     padding-right: 0;
+     padding-left: 0;
+}
+body .hero {
+  padding: 2em 8em;
+  height: 500px;
+  color: black;
+  background-image: url("./images/hero_logo.png"), linear-gradient(120deg, #6BCA70, #399A7B);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 30% 0%; }
+  body .hero .logo {
+    display: block; }
+  body .hero .hero-content .hero-text {
+    padding-top: 14%;
+    width: 70%; }
+    body .hero .hero-content .hero-text h2 {
+      font-size: 2.5em;
+      color: #16382F;
+      font-weight: 700;
+      letter-spacing: 2px; }
+    body .hero .hero-content .hero-text h4 {
+      padding-left: 0.5em;
+      color: #CBFFF3;
+      font-size: 1.2em;
+      font-style: italic;
+      letter-spacing: 1px;
+      line-height: 34px; }
+  body .hero .phone-mockup img {
+    float: right;
+    width: 50%; }
+body hr {
+  margin-top: 3px;
+  padding: 0;
+  background-color: #5cbc73;
+  height: 4px; }
+body .description {
+  padding: 5em 0em;
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3; }
+  body .description .sync {
+    height: 50%;
+    margin-left: 50px; }
+    body .description .sync .icon img {
+      height: 120px;
+      padding-bottom: 20px; }
+    body .description .sync h3 {
+      color: #2E3B4E;
+      font-size: 1.4em;
+      font-weight: 100;
+      letter-spacing: 0.5px; }
+  body .description .schedule {
+    height: 50%;
+    margin-left: 100px; }
+    body .description .schedule .icon img {
+      height: 120px;
+      padding-bottom: 20px; }
+    body .description .schedule h3 {
+      color: #2E3B4E;
+      font-size: 1.5em;
+      font-weight: 100;
+      letter-spacing: 0.5px; }
+  body .description hr {
+    margin-top: 3px;
+    background-color: #979797;
+    height: 1px; }
+body .feature {
+  padding-top: 3em; }
+  body .feature h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #2E3B4E; }
+  body .feature .feature-content {
+    margin-top: 50px;
+    width: 100%; }
+    body .feature .feature-content .feature-text {
+      width: 50%; }
+      body .feature .feature-content .feature-text p {
+        font-weight: 500;
+        margin: 20px 0px;
+        color: #2E3B4E; }
+    body .feature .feature-content .feature-image {
+      width: 50%; }
+      body .feature .feature-content .feature-image img {
+        width: 100%;
+        float: left; }
+body .recommendation {
+  color: #515151;
+  border-top: 1px solid #979797;
+  background-color: #F7F7F7;
+  padding: 4% 11%;
+  text-align: center; }
+  body .recommendation h4 {
+    padding: 0% 10%;
+    font-size: 1.2em;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 0 auto;
+    letter-spacing: 1px; }
+body footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+  color: white;
+  width: 100%;
+  height: 200px;
+  background-color: #4D4D4D;
+  padding: 4% 11%; }
+  body footer p {
+    display: inline-block; }
+  body footer .footer-content {
+    flex-grow: 0.95;
+    align-self: center; }
+    body footer .footer-content .andela-logo {
+      width: 15%; }
+  body footer .footer-trademark, body footer .copyright {
+    align-self: center; }

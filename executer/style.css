@@ -199,21 +199,33 @@ body .recommendation {
     @media screen and (max-width: 480px) {
       body .recommendation h4 {
         font-size: 1em; } }
-body footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.5em;
-  color: white;
-  width: 100%;
-  height: 200px;
-  background-color: #4D4D4D;
-  padding: 4% 11%; }
-  body footer p {
-    display: inline-block; }
-  body footer .footer-content {
-    flex-grow: 0.95;
-    align-self: center; }
-    body footer .footer-content .andela-logo {
-      width: 15%; }
-  body footer .footer-trademark, body footer .copyright {
-    align-self: center; }
+   body footer {
+    display: inline-block;
+    font-size: .8em;
+    color: #5D5D5D;
+    height: 100%;
+    background-color: #16171D;
+    padding: 40px;
+    text-align: center; }
+    body footer span {
+      display: block; }
+    body footer h4 {
+      color: white;
+      text-align: left; }
+    body footer div[class$="footer"] {
+      width: 25%;
+      padding: 25px 25px;
+      display: inline-block;
+      margin-right: 30px; 
+      text-align: left;
+    }
+    body footer .andela-footer {
+      color: #9B9B9B; 
+    }
+      body footer .andela-footer img {
+        display: block;
+        width: 30%;
+        margin-bottom: 20px; }
+      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+        width: 15%; 
+      }

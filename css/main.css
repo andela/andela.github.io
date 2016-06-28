@@ -1,5 +1,15 @@
-/*Typography*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,900);
+.wrapper{
+     max-width: 100%;
+     margin-right: auto;
+     margin-left: auto;
+     padding-right: 0;
+     padding-left: 0;
+}
+.page-content{
+  padding: 0;
+}
+
 h3, body section h3 {
   font-weight: 100;
   color: #757F8F;
@@ -168,4 +178,3 @@ body {
         margin-bottom: 20px; }
       body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
         width: 15%; }
-        

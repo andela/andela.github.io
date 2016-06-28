@@ -1,0 +1,145 @@
+/* Stylesheet for Skilltree */
+.wrapper{
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.page-content{
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+  body #banner {
+    color: #fff;
+    padding-bottom: 0;
+    z-index: 4;
+    position: relative;
+    background-color: #AC62D0; }
+    body #banner #navbar .container {
+      padding: .5rem 0 0 0; }
+      body #banner #navbar .container .row {
+        padding: 2rem;
+        margin-bottom: 2rem;
+        overflow: hidden; }
+        body #banner #navbar .container .row .logo {
+          text-decoration: none;
+          color: #fff;
+          font-size: 3.2rem;
+          font-weight: 700; }
+        body #banner #navbar .container .row nav {
+          display: block;
+          font-size: 1.3rem;
+          color: #fff; }
+          body #banner #navbar .container .row nav a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-left: 3rem;
+            opacity: .7; }
+    body #banner .container .header {
+      text-align: center; }
+      body #banner .container .header h1 {
+        font-size: 3.8rem;
+        font-weight: 400; }
+      body #banner .container .header h2 {
+        font-weight: 200;
+        font-size: 2.7rem;
+        margin: 0 auto;
+        max-width: 900px;
+        margin-top: 1rem; }
+    body #banner .container .player {
+      margin: 0 auto;
+      border-radius: 5px;
+      display: -webkit-flex;
+      align-items: center;
+      align-content: center;
+      position: relative;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 250ms;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 600px;
+      background-image: url(../images/player.png); }
+      body #banner .container .player .play-icon {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 7rem; }
+        body #banner .container .player .play-icon .text {
+          font-size: 2rem;
+          font-weight: 300;
+          line-height: 0.5rem; }
+  body .content {
+    padding-top: 6rem; }
+    body .content .row {
+      padding-bottom: 11rem; }
+      body .content .row .description {
+        padding: 5.6rem 4rem; }
+        body .content .row .description h4 {
+          color: #0E222F;
+          text-align: left;
+          margin: 0;
+          font-weight: 300;
+          font-size: 3rem; }
+        body .content .row .description p {
+          margin-top: 1rem;
+          color: #0E222F;
+          font-size: 2rem;
+          font-weight: 300; }
+      body .content .row img {
+        display: block;
+        -webkit-flex-shrink: 0;
+        height: auto;
+        width: 100%; }
+  body .demo {
+    background-color: #ebebeb;
+    padding: 4rem 0;
+    text-align: center; }
+    body .demo h2 {
+      margin: 0 0 1rem;
+      color: #AC62D0;
+      font-size: 3rem;
+      font-weight: 200; }
+    body .demo p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin: 0; }
+      body .demo p .demo-btn {
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #AC62D0;
+        color: #AC62D0;
+        margin: 0 auto;
+        padding: 8px 15px;
+        border-radius: 8px;
+        cursor: pointer; }
+        body .demo p .demo-btn:hover {
+          color: #fff;
+          background: #AC62D0; }
+  body footer {
+    background: #AC62D0;
+    color: #fff; }
+    body footer .row {
+      padding: 3.5rem 0; }
+      body footer .row .foot-nav {
+        text-align: left; }
+        body footer .row .foot-nav h4 {
+          font-weight: 300;
+          margin-bottom: 0;
+          font-size: 2.3rem; }
+        body footer .row .foot-nav ul {
+          list-style: none;
+          margin-bottom: 0; }
+          body footer .row .foot-nav ul li {
+            margin-bottom: 0; }
+            body footer .row .foot-nav ul li a {
+              cursor: hand;
+              text-decoration: none;
+              color: #fff;
+              font-size: 1.2rem; }

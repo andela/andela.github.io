@@ -125,23 +125,32 @@ body {
           color: #fff;
           background: #AC62D0; }
   body footer {
-    background: #AC62D0;
-    color: #fff; }
-    body footer .row {
-      padding: 3.5rem 0; }
-      body footer .row .foot-nav {
-        text-align: left; }
-        body footer .row .foot-nav h4 {
-          font-weight: 300;
-          margin-bottom: 0;
-          font-size: 2.3rem; }
-        body footer .row .foot-nav ul {
-          list-style: none;
-          margin-bottom: 0; }
-          body footer .row .foot-nav ul li {
-            margin-bottom: 0; }
-            body footer .row .foot-nav ul li a {
-              cursor: hand;
-              text-decoration: none;
-              color: #fff;
-              font-size: 1.2rem; }
+    display: inline-block;
+    font-size: .8em;
+    color: #5D5D5D;
+    height: 100%;
+    background-color: #16171D;
+    padding: 40px;
+    text-align: center; }
+    body footer span {
+      display: block; }
+    body footer h4 {
+      color: white;
+      text-align: left; }
+    body footer div[class$="footer"] {
+      width: 25%;
+      padding: 25px 25px;
+      display: inline-block;
+      margin-right: 30px; 
+      text-align: left;
+    }
+    body footer .andela-footer {
+      color: #9B9B9B; 
+    }
+      body footer .andela-footer img {
+        display: block;
+        width: 30%;
+        margin-bottom: 20px; }
+      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+        width: 15%; 
+      }

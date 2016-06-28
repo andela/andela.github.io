@@ -1,5 +1,5 @@
 /* Stylesheet for Nkata */
-@import url('milligram.css');
+@import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
 
 /* Overrides
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -29,6 +29,7 @@ a:hover {
     background: #fff;
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
 }
 
 

@@ -1,0 +1,286 @@
+/* Stylesheet for Nkata */
+@import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
+
+/* Overrides
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 20rem) {
+  .row {
+    margin-left: auto;
+    flex-direction: row;
+  }
+}
+
+
+a:hover {
+  color: #fff;
+}
+
+.row {
+  width: 100%;
+}
+
+
+.wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+
+/* Sections
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+    /*border-top: .1rem solid #d1d1d1;*/
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    margin-bottom: 0;
+    max-width: 83rem;
+}
+
+.header {
+  background-color: #f4f5f6;
+  padding-top: 1rem;
+}
+
+@media (min-width: 40.0rem) {
+  .header {
+    padding-top: 5rem;
+  }
+}
+.header .container {
+  position: relative;
+  border-top: 0;
+  text-align: center;
+}
+.header .title {
+  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+}
+.header .img {
+  height: 15.0rem;
+  margin-bottom: 2rem;
+}
+.header + section {
+  border-top: 0;
+}
+.header .button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 40.0rem) {
+  .header .button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+/* Navbar
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navigation {
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100vw;
+    z-index: 99;
+}
+/* Re-overiding the width 100% declaration to match size of% based container */
+.navigation .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navigation {
+    display: block;
+    height: 5.2rem;
+    width: 100%;
+}
+.navigation-list {
+    list-style: none;
+    margin: 0;
+}
+@media (min-width: 80.0rem) {
+    .navigation-list {
+        margin-right: 0;
+    }
+}
+.navigation-item {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    position: relative;
+    color: #fff;
+}
+.navigation .img {
+    position: relative;
+    top: .3rem;
+    height: 2.0rem;
+}
+.navigation .title,
+.navigation-title {
+    color: #fff;
+    display: inline;
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 5.2rem;
+    font-size: 1.2rem;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navigation-link {
+    display: inline;
+    line-height: 5.2rem;
+    font-size: 1.2rem;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navigation-link.active {
+    color: #606c76;
+}
+.navigation-link:visited {
+  color: #fff;
+}
+
+#preview {
+  margin-bottom: -44px;
+  text-align: center;
+}
+
+section#hero.container {
+  max-width: 100%;
+  padding: 8rem 29%;
+  background: -webkit-radial-gradient(50% 95%, #8CB9DB, #025CC9);
+  color: #fff;
+}
+
+.project-description {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#project-overview {
+  background: #fff;
+}
+
+#project-overview div.row:not(:last-child) {
+  border-bottom: 1px solid #DFDFDF;
+  margin: 30px auto;
+}
+
+/* Typography
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Images
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.andela-logo {
+  width: 150px;
+}
+
+.preview-icon {
+  max-width: 120px;
+}
+
+.nkata-screenshot {
+  width: 80rem;
+}
+
+.nkata-logo {
+ width: 22px;
+}
+
+/* Footer
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#project-footer {
+  background: #F2F2F2;
+  max-width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+
+/* Utilities
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.padding {
+  padding: 20px;
+}
+
+/* Media Queries
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 1285px) {
+  section#hero.container {
+    padding: 8rem 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  section#hero.container {
+    padding: 8rem 10%;
+  }
+}
+@media (max-width: 648px) {
+  section#hero.container {
+    padding: 8rem 1%;
+  }
+}
+
+@media (max-width: 640px) {
+  #preview {
+    margin-bottom: -80px;
+  }
+}
+  body footer {
+    display: inline-block;
+    font-size: .8em;
+    color: #5D5D5D;
+    height: 100%;
+    background-color: #16171D;
+    padding: 40px;
+    text-align: center; }
+    body footer span {
+      display: block; }
+    body footer h4 {
+      color: white;
+      text-align: left; }
+    body footer div[class$="footer"] {
+      width: 25%;
+      padding: 25px 25px;
+      display: inline-block;
+      margin-right: 30px; 
+      text-align: left;
+    }
+    body footer .andela-footer {
+      color: #9B9B9B; 
+    }
+      body footer .andela-footer img {
+        display: block;
+        width: 30%;
+        margin-bottom: 20px; }
+      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+        width: 15%; 
+      }

@@ -10,7 +10,13 @@
     flex-direction: row;
   }
 }
+a {
+  color: inherit;
+}
 
+#footer-link:hover {
+  color: #fff;
+}
 
 a:hover {
   color: #fff;
@@ -254,7 +260,7 @@ section#hero.container {
     margin-bottom: -80px;
   }
 }
-  /*body footer {
+  body footer {
     display: inline-block;
     font-size: .8em;
     color: #5D5D5D;
@@ -283,4 +289,4 @@ section#hero.container {
         margin-bottom: 20px; }
       body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
         width: 15%;
-      }*/
+      }

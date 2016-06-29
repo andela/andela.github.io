@@ -11,6 +11,14 @@
 .page-content{
   padding: 0;
 }
+
+a {
+  color: inherit;
+}
+
+#footer-link:hover {
+  color: #fff;
+}
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0; }

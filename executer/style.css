@@ -7,6 +7,14 @@
      padding-right: 0;
      padding-left: 0;
 }
+a {
+  color: inherit;
+}
+
+#footer-link:hover {
+  color: #fff;
+}
+
 .page-content{
   padding: 0;
 }

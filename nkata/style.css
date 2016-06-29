@@ -10,7 +10,13 @@
     flex-direction: row;
   }
 }
+a {
+  color: inherit;
+}
 
+#footer-link:hover {
+  color: #fff;
+}
 
 a:hover {
   color: #fff;
@@ -271,16 +277,16 @@ section#hero.container {
       width: 25%;
       padding: 25px 25px;
       display: inline-block;
-      margin-right: 30px; 
+      margin-right: 30px;
       text-align: left;
     }
     body footer .andela-footer {
-      color: #9B9B9B; 
+      color: #9B9B9B;
     }
       body footer .andela-footer img {
         display: block;
         width: 30%;
         margin-bottom: 20px; }
       body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
-        width: 15%; 
+        width: 15%;
       }

@@ -21,10 +21,10 @@ h4 {
   width: 60%;
   color: #5D5D5D;
   padding: 0;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px; }
+  margin: 4px 0px; }
   #footer-link:hover {
     color: white; }
 
@@ -52,7 +52,7 @@ body {
     padding: 200px 60px;
     font-weight: 400;
     font-size: 1.6em;
-    background: url("./images/hero.jpg") no-repeat center;
+    background: url("../images/hero.jpg") no-repeat center;
     background-size: cover; }
     @media screen and (max-width: 480px) {
       body .hero {
@@ -154,7 +154,7 @@ body {
         body .projects .empty-thumbnails {
           display: none; } }
       body .projects .empty-thumbnails .thumb-containers {
-        background: url("./images/coming_soon.png") repeat center;
+        background: url("../images/coming_soon.png") repeat center;
         background-size: cover; }
     body .projects .see-more-projects-container {
       display: flex;
@@ -215,13 +215,14 @@ body {
         body section button {
           width: 30%; } }
   body footer {
+    width: 100%;
     display: inline-block;
     font-size: .8em;
     color: #5D5D5D;
     height: 30%;
     background-color: #16171D;
     padding: 40px;
-    text-align: left; }
+    text-align: center; }
     @media screen and (max-width: 480px) {
       body footer {
         display: block;
@@ -240,7 +241,9 @@ body {
       width: 21%;
       padding: 25px 25px;
       display: inline-block;
-      margin-right: 30px; }
+      margin-right: 30px; 
+      text-align: left; 
+    }
       @media screen and (max-width: 480px) {
         body footer div[class$="footer"] {
           width: 100%;

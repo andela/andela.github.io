@@ -21,10 +21,10 @@ h4 {
   width: 60%;
   color: #5D5D5D;
   padding: 0;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px; }
+  margin: 4px 0px; }
   #footer-link:hover {
     color: white; }
 
@@ -52,7 +52,7 @@ body {
     padding: 200px 60px;
     font-weight: 400;
     font-size: 1.6em;
-    background: url("./images/hero.jpg") no-repeat center;
+    background: url("../images/hero.jpg") no-repeat center;
     background-size: cover; }
     @media screen and (max-width: 480px) {
       body .hero {
@@ -109,7 +109,7 @@ body {
         body .projects .thumbnails [class*="thumb-containers"] .skilltree-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
           background-image: radial-gradient(150% 100%, rgba(185, 102, 187, 0.69) 0%, #732d67 100%); }
         body .projects .thumbnails [class*="thumb-containers"] .nkata-image-holder, body .projects .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
-          background-image: radial-gradient(150% 100%, rgba(52, 173, 236, 0.78) 0%, rgba(45, 115, 98, 0.65) 100%); }
+          background-image: radial-gradient(150% 100%, rgba(255, 255, 255, 0.78) 0%, rgba(0, 170, 235, 0.65) 100%);}
         body .projects .thumbnails [class*="thumb-containers"] .card-content, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content {
           margin-bottom: 10%; }
           body .projects .thumbnails [class*="thumb-containers"] .card-content h2, body .projects .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
@@ -154,7 +154,7 @@ body {
         body .projects .empty-thumbnails {
           display: none; } }
       body .projects .empty-thumbnails .thumb-containers {
-        background: url("./images/coming_soon.png") repeat center;
+        background: url("../images/coming_soon.png") repeat center;
         background-size: cover; }
     body .projects .see-more-projects-container {
       display: flex;
@@ -215,6 +215,7 @@ body {
         body section button {
           width: 30%; } }
   body footer {
+    /*width: 100%;*/
     display: inline-block;
     font-size: .8em;
     color: #5D5D5D;

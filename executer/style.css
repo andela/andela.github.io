@@ -31,6 +31,38 @@ body .hero {
       body .hero .logo {
         width: 100px;
         padding-top: 4%; } }
+      body .hero .links {
+        /*float: right;*/
+        color: white;
+        font-weight: 400;
+        margin-left: 65%; }
+        @media screen and (max-width: 480px) {
+          body .hero .links {
+          margin-left: 0;
+          margin-top: 1em; }}
+          body .hero .links a {
+            margin-right: 4em;
+            color: white;
+            background-color: #44a578;
+          }
+            @media screen and (max-width: 480px) {
+              body .hero .links a {
+                color: white;
+                font-weight: 100;
+                font-size: .8em;
+                border: 1px solid white;
+                padding: .4em;
+                margin-top: 0em;
+                border-radius: 4px; }}
+          @media screen and (min-width: 481px) and (max-width: 768px) {
+            body .hero .links a {
+              color: white;
+              font-weight: 100;
+              font-size: .8em;
+              border: 1px solid white;
+              padding: .4em;
+              margin-top: 0em;
+              border-radius: 4px; }}
   body .hero .hero-content .hero-text {
     padding-top: 14%;
     width: 70%; }

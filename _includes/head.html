@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" href="{{ "images/favicon.png" | prepend: site.baseurl }}">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  
+
   <!-- Include page-specific styles -->
   {% if page.css %}
     {% for stylesheet in page.css %}
@@ -17,14 +17,10 @@
   {% endif %}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"
       rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{{ "/os-icons/os-icons.css" | prepend: site.baseurl }}">
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="{{ "/js/app.js" | prepend: site.baseurl }}"></script> -->
   <script type="text/javascript" src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
-
-
-  <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

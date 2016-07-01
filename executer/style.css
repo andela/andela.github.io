@@ -99,7 +99,7 @@ body .description {
         width: 50%; } }
     body .description .sync .icon img {
       height: 100px;
-      margin-bottom: 10%; }
+      margin-bottom: 5%; }
       @media screen and (max-width: 480px) {
         body .description .sync .icon img {
           height: calc(120px/2); } }
@@ -113,6 +113,7 @@ body .description {
       letter-spacing: 0.5px; }
   body .description .schedule {
     height: 50%;
+    margin: 2%;
     margin-left: 100px; }
     @media screen and (max-width: 480px) {
       body .description .schedule {
@@ -123,8 +124,8 @@ body .description {
         margin: 2%;
         width: 50%; } }
     body .description .schedule .icon img {
-      height: 120px;
-      padding-bottom: 20px; }
+      height: 100px;
+      margin-bottom: 5%; }
       @media screen and (max-width: 480px) {
         body .description .schedule .icon img {
           height: calc(120px/2); } }
@@ -224,16 +225,16 @@ body .recommendation {
       width: 25%;
       padding: 25px 25px;
       display: inline-block;
-      margin-right: 30px; 
+      margin-right: 30px;
       text-align: left;
     }
     body footer .andela-footer {
-      color: #9B9B9B; 
+      color: #9B9B9B;
     }
       body footer .andela-footer img {
         display: block;
         width: 30%;
         margin-bottom: 20px; }
       body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
-        width: 15%; 
+        width: 15%;
       }

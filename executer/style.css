@@ -258,7 +258,7 @@ body .recommendation {
           height: 30%;
           background-color: #16171D;
           padding: 40px;
-          text-align: left; }
+          text-align: center; }
           @media screen and (max-width: 480px) {
             body footer {
               display: block;
@@ -277,7 +277,8 @@ body .recommendation {
             width: 21%;
             padding: 25px 25px;
             display: inline-block;
-            margin-right: 30px; }
+            margin-right: 30px;
+            text-align: left; }
             @media screen and (max-width: 480px) {
               body footer div[class$="footer"] {
                 width: 100%;

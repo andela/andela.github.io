@@ -39,6 +39,38 @@ body .hero {
       body .hero .logo {
         width: 100px;
         padding-top: 4%; } }
+      body .hero .links {
+        /*float: right;*/
+        color: white;
+        font-weight: 400;
+        margin-left: 65%; }
+        @media screen and (max-width: 480px) {
+          body .hero .links {
+          margin-left: 0;
+          margin-top: 1em; }}
+          body .hero .links a {
+            margin-right: 4em;
+            color: white;
+            background-color: #44a578;
+          }
+            @media screen and (max-width: 480px) {
+              body .hero .links a {
+                color: white;
+                font-weight: 100;
+                font-size: .8em;
+                border: 1px solid white;
+                padding: .4em;
+                margin-top: 0em;
+                border-radius: 4px; }}
+          @media screen and (min-width: 481px) and (max-width: 768px) {
+            body .hero .links a {
+              color: white;
+              font-weight: 100;
+              font-size: .8em;
+              border: 1px solid white;
+              padding: .4em;
+              margin-top: 0em;
+              border-radius: 4px; }}
   body .hero .hero-content .hero-text {
     padding-top: 14%;
     width: 70%; }
@@ -89,14 +121,15 @@ body .description {
       padding: 1em 5em; } }
   body .description .sync {
     height: 50%;
-    margin: 2%; }
+    width: 30%; }
     @media screen and (max-width: 480px) {
       body .description .sync {
+        width: 100%;
         margin: 2%; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       body .description .sync {
         margin: 2%;
-        width: 50%; } }
+        width: 30%; } }
     body .description .sync .icon img {
       height: 100px;
       margin-bottom: 5%; }
@@ -112,17 +145,25 @@ body .description {
       font-weight: 100;
       letter-spacing: 0.5px; }
   body .description .schedule {
+    width: 30%;
     height: 50%;
     margin: 2%;
     margin-left: 100px; }
     @media screen and (max-width: 480px) {
       body .description .schedule {
+        width: 100%;
         margin: 2%;
         margin-top: 15%; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       body .description .schedule {
+        width: 30%;
         margin: 2%;
         width: 50%; } }
+    body .description .schedule .icon {
+      height: 9em;}
+      @media screen  and max-width: 480px{
+        body .description .schedule .icon{
+        height: calc(9em/2); }}
     body .description .schedule .icon img {
       height: 100px;
       margin-bottom: 5%; }
@@ -208,33 +249,71 @@ body .recommendation {
     @media screen and (max-width: 480px) {
       body .recommendation h4 {
         font-size: 1em; } }
-   body footer {
-    display: inline-block;
-    font-size: .8em;
-    color: #5D5D5D;
-    height: 100%;
-    background-color: #16171D;
-    padding: 40px;
-    text-align: center; }
-    body footer span {
-      display: block; }
-    body footer h4 {
-      color: white;
-      text-align: left; }
-    body footer div[class$="footer"] {
-      width: 25%;
-      padding: 25px 25px;
-      display: inline-block;
-      margin-right: 30px;
-      text-align: left;
-    }
-    body footer .andela-footer {
-      color: #9B9B9B;
-    }
-      body footer .andela-footer img {
-        display: block;
-        width: 30%;
-        margin-bottom: 20px; }
-      body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
-        width: 15%;
-      }
+
+        body footer {
+          /*width: 100%;*/
+          display: inline-block;
+          font-size: .8em;
+          color: #5D5D5D;
+          height: 30%;
+          background-color: #16171D;
+          padding: 40px;
+          text-align: center; }
+          @media screen and (max-width: 480px) {
+            body footer {
+              display: block;
+              padding: 2em;
+              font-size: .6em; } }
+          body footer span {
+            display: block; }
+            @media screen and (max-width: 480px) {
+              body footer span {
+                display: inline-block;
+                padding-right: 3em; } }
+          body footer h4 {
+            color: white;
+            text-align: left; }
+          body footer div[class$="footer"] {
+            width: 21%;
+            padding: 25px 25px;
+            display: inline-block;
+            margin-right: 30px;
+            text-align: left; }
+            @media screen and (max-width: 480px) {
+              body footer div[class$="footer"] {
+                width: 100%;
+                padding: .1em; } }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              body footer div[class$="footer"] {
+                font-size: .9em;
+                margin-right: 0; } }
+          body footer .andela-footer {
+            color: #9B9B9B; }
+            @media screen and (max-width: 480px) {
+              body footer .andela-footer {
+                font-size: .1em;
+                width: 100%;
+                margin: 1em 0em;
+                padding: .1em; } }
+            body footer .andela-footer img {
+              display: block;
+              width: 30%;
+              margin-bottom: 20px; }
+              @media screen and (min-width: 481px) and (max-width: 768px) {
+                body footer .andela-footer img {
+                  width: 70%;
+                  margin-right: 0; } }
+            body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+              width: 15%; }
+              @media screen and (max-width: 480px) {
+                body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+                  font-size: .2em;
+                  padding-top: .5em; } }
+              @media screen and (min-width: 481px) and (max-width: 768px) {
+                body footer .andela-footer .navigation-footer, body footer .andela-footer .projects-footer {
+                  font-size: .2em;
+                  padding-top: .5em; } }
+            body footer .andela-footer .navigation-footer span {
+              padding: 1em 1em; }
+            body footer .andela-footer .projects-footer ul li {
+              list-style-type: none; }

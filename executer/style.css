@@ -1,5 +1,11 @@
 /* Stylesheet for Executer */
 @import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
+@import url("../font/font.css");
+
+body {
+  font-family: DINPro;
+}
+
 .wrapper{
      max-width: 100%;
      margin-right: auto;

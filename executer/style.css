@@ -57,7 +57,10 @@ body .hero {
           body .hero .links a {
             margin-right: 4em;
             color: white;
-            background-color: #44a578;
+          }
+          body .hero .links a:hover {
+            margin-right: 4em;
+            color: #b2dfdb;
           }
             @media screen and (max-width: 480px) {
               body .hero .links a {

@@ -155,6 +155,8 @@ a:hover {
     color: #fff;
     text-transform: uppercase;
 }
+
+
 .navigation-link.active {
     color: #606c76;
 }
@@ -207,6 +209,10 @@ section#hero.container {
 
 .nkata-logo {
  width: 22px;
+}
+
+.nkata-logo-text {
+  font-size: 1.5em;
 }
 
 /* Footer

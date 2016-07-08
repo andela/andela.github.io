@@ -131,8 +131,9 @@ body {
         border: 2px solid #AC62D0;
         color: #AC62D0;
         margin: 0 auto;
-        padding: 8px 15px;
+        padding: 8px 25px;
         border-radius: 8px;
+        letter-spacing: .15rem;
         cursor: pointer; }
         body .demo p .demo-btn:hover {
           color: #fff;
@@ -164,7 +165,7 @@ body {
               width: 21%;
               padding: 25px 25px;
               display: inline-block;
-              margin-right: 30px; 
+              margin-right: 30px;
               text-align: left;}
               @media screen and (max-width: 480px) {
                 body footer div[class$="footer"] {

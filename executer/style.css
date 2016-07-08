@@ -251,11 +251,29 @@ body .recommendation {
     line-height: 1.7;
     font-weight: 300;
     margin: 0 auto;
+    margin-bottom: 2em;
     letter-spacing: 1px; }
     @media screen and (max-width: 480px) {
       body .recommendation h4 {
         font-size: 1em; } }
-
+body .recommendation a {
+  margin-top: 2em;
+  font-weight: 500;
+  background-color: #2D7362;
+  border: none;
+  width: 25%;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body .recommendation a:hover{
+  color: #2D7362;
+  background-color: #68C770;
+}
         body footer {
           /*width: 100%;*/
           display: inline-block;

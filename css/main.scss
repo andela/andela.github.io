@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,900);
+@import url("../font/font.css");
 
 h3, body section h3 {
   font-weight: 100;
@@ -87,7 +87,7 @@ h4 {
   .title {
     color: #fff;
     display: inline;
-    font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+    font-family: DINPro;
     line-height: 5.2rem;
     font-size: 1.2rem;
     padding: 0;
@@ -100,7 +100,7 @@ h4 {
 .navigation-title {
   color: #fff;
   display: inline;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+  font-family: DINPro; 
   line-height: 5.2rem;
   font-size: 1.2rem;
   padding: 0;
@@ -129,7 +129,7 @@ h4 {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: DINPro;
   font-weight: 300;
   a {
     font-weight: 500;

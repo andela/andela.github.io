@@ -20,6 +20,16 @@ a {
 #footer-link:hover {
   color: #fff;
 }
+
+.cta-container {
+  text-align: center;
+}
+ 
+.button.skilltree-cta {
+  background-color: #AC62D0;
+  border: #AC62D0;
+}
+
 body {
   font-family: DINPro, sans-serif;
   margin: 0; }

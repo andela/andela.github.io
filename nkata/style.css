@@ -90,6 +90,11 @@ a:hover {
   }
 }
 
+.button.nkata-cta {
+  background-color: #0860CA;
+  border: #0860CA;
+}
+
 
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */

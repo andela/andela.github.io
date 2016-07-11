@@ -1,7 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,900);
+@import url("../font/font.css");
+
 
 h3, body section h3 {
   font-weight: 100;
@@ -87,7 +88,7 @@ h4 {
   .title {
     color: #fff;
     display: inline;
-    font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+    font-family: DINPro;    
     line-height: 5.2rem;
     font-size: 1.2rem;
     padding: 0;
@@ -100,7 +101,7 @@ h4 {
 .navigation-title {
   color: #fff;
   display: inline;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+  font-family: DINPro;
   line-height: 5.2rem;
   font-size: 1.2rem;
   padding: 0;
@@ -129,7 +130,7 @@ h4 {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: DINPro; 
   font-weight: 300;
   a {
     font-weight: 500;
@@ -188,7 +189,7 @@ body {
     background-size: cover;
     h1 {
       font-size: 1.7em;
-      font-weight: 400;
+      font-weight: 700;
     }
     h4{
     color: white;
@@ -204,6 +205,21 @@ body {
         width: 70%; }
     }
   }
+  .tag {
+    text-align: left;
+    padding-left: 5px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .web {
+    border-left: 2px solid #6376f9;
+  }
+  .mobile {
+    border-left: 2px solid #f0405e;
+  }
+  .opensource {
+    border-left: 2px solid #0fd8e8;
+  }
   .projects {
     background-color: #FBFBFB;
     padding: 30px 80px;
@@ -218,7 +234,6 @@ body {
       display: inline-block;
       width: 30%;
       margin-left: 2%;
-      border: 1px solid #e3e3e3;
     }
     .thumbnails [class*="thumb-containers"] .image-holder, .empty-thumbnails [class*="thumb-containers"] .image-holder, .thumbnails [class*="thumb-containers"] .executer-image-holder, .empty-thumbnails [class*="thumb-containers"] .executer-image-holder, .thumbnails [class*="thumb-containers"] .skilltree-image-holder, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder, .thumbnails [class*="thumb-containers"] .nkata-image-holder, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
       display: flex;
@@ -226,6 +241,7 @@ body {
       position: relative;
       left: 0;
       right: 0;
+      border: 1px solid #e3e3e3;
 
       &::before {
         content: "";
@@ -257,11 +273,13 @@ body {
     }
     .thumbnails [class*="thumb-containers"] .card-content, .empty-thumbnails [class*="thumb-containers"] .card-content {
       margin-bottom: 10%;
+      padding-bottom: 6%;
+      border: 1px solid #e3e3e3;
     }
     .thumbnails [class*="thumb-containers"] .card-content h2, .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
       font-weight: 100;
       padding: 0px 20px;
-      border-left: 2px solid black;
+      text-transform: uppercase;
     }
     .thumbnails [class*="thumb-containers"] .card-content p, .empty-thumbnails [class*="thumb-containers"] .card-content p {
       height: 50px;

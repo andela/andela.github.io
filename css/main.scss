@@ -235,17 +235,17 @@ body {
       font-size: .8em;
     }
     .thumbnails [class*="thumb-containers"] .card-content .tags, .empty-thumbnails [class*="thumb-containers"] .card-content .tags {
-      margin: 20px 0px;
+      margin-top: 4em;
     }
     .thumbnails [class*="thumb-containers"] .card-content .tags span, .empty-thumbnails [class*="thumb-containers"] .card-content .tags span {
       margin-top: 300px;
       text-transform: uppercase;
       padding-right: 5px;
-      font-size: .5em;
+      font-size: .65em;
       font-weight: 700;
     }
     .thumbnails [class*="thumb-containers"] .card-content .tags span::before, .empty-thumbnails [class*="thumb-containers"] .card-content .tags span::before {
-      content: "\03bf ";
+      content: "\25CF";
       font-weight: 100;
       font-size: .3em;
       padding: 0px 3px;

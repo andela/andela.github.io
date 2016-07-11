@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url("../font/font.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700,900);
 
 h3, body section h3 {
   font-weight: 100;
@@ -87,7 +87,7 @@ h4 {
   .title {
     color: #fff;
     display: inline;
-    font-family: DINPro;
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
     line-height: 5.2rem;
     font-size: 1.2rem;
     padding: 0;
@@ -100,7 +100,7 @@ h4 {
 .navigation-title {
   color: #fff;
   display: inline;
-  font-family: DINPro; 
+  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
   line-height: 5.2rem;
   font-size: 1.2rem;
   padding: 0;
@@ -129,7 +129,7 @@ h4 {
 }
 
 body {
-  font-family: DINPro;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   a {
     font-weight: 500;
@@ -229,18 +229,13 @@ body {
 
       &::before {
         content: "";
-        background: linear-gradient( rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68) ), url("../images/Executer_Screenshot.png") center center no-repeat;;
+        background-image: url("../images/Executer_Screenshot.png");
         background-size: cover;
-        -webkit-filter: blur(2px);
-       -moz-filter: blur(2px);
-       -o-filter: blur(2px);
-       -ms-filter: blur(2px);
-       filter: blur(2px);
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     }
     .thumbnails [class*="thumb-containers"] .image-holder img, .empty-thumbnails [class*="thumb-containers"] .image-holder img, .thumbnails [class*="thumb-containers"] .executer-image-holder img, .empty-thumbnails [class*="thumb-containers"] .executer-image-holder img, .thumbnails [class*="thumb-containers"] .skilltree-image-holder img, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder img, .thumbnails [class*="thumb-containers"] .nkata-image-holder img, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder img {
@@ -250,12 +245,14 @@ body {
     }
     .thumbnails [class*="thumb-containers"] .skilltree-image-holder, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
       &::before {
-        background: linear-gradient( rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68) ), url('../images/Skilltree_Screenshot.png');
+        background-image: url('../images/Skilltree_Screenshot.png');
+        background-size: cover;
       }
     }
     .thumbnails [class*="thumb-containers"] .nkata-image-holder, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
       &::before {
-        background: linear-gradient( rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68) ), url('../images/Nkata_Screenshot.png');
+        background-image: url('../images/Nkata_Screenshot.png');
+        background-size: cover;
       }
     }
     .thumbnails [class*="thumb-containers"] .card-content, .empty-thumbnails [class*="thumb-containers"] .card-content {

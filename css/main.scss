@@ -36,14 +36,101 @@ h4 {
   }
 }
 
-/*Colors*/
+/* Navbar
+// –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navigation {
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100vw;
+  z-index: 99;
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  display: block;
+  width: 100%;
+}
+
+/* Re-overiding the width 100% declaration to match size of% based container */
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+}
+
+@media (min-width: 80rem) {
+  .navigation-list {
+    margin-right: 0;
+  }
+}
+
+.navigation-item {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 2.5rem;
+  position: relative;
+  color: #fff;
+}
+
+.navigation {
+  .img {
+    position: relative;
+    top: .3rem;
+    height: 2.0rem;
+  }
+  .title {
+    color: #fff;
+    display: inline;
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 5.2rem;
+    font-size: 1.2rem;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.navigation-title {
+  color: #fff;
+  display: inline;
+  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 5.2rem;
+  font-size: 1.2rem;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-link {
+  display: inline;
+  line-height: 5.2rem;
+  font-size: 1.2rem;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  &.active {
+    color: #606c76;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: #fff;
+  }
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   a {
     font-weight: 500;
-    background-color: #3359DF;
     border: none;
     width: 30%;
     color: white;
@@ -82,9 +169,7 @@ body {
       cursor: pointer;
     }
   }
-  a:hover {
-    background-color: #5f7de6;
-  }
+  
   .projects {
     .thumbnails [class*="thumb-containers"] .card-content a:hover, .empty-thumbnails [class*="thumb-containers"] .card-content a:hover, .see-more-projects-container .see-more-projects:hover {
       background-color: #5f7de6;
@@ -96,7 +181,7 @@ body {
     padding: 100px 60px;
     font-weight: 400;
     font-size: 1.6em;
-    background: url("../images/hero.jpg") no-repeat center;
+    background: url("../images/hero.png") no-repeat center;
     background-size: cover;
     h1 {
       font-size: 1.7em;

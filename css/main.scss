@@ -38,6 +38,9 @@ h4 {
 
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.logo {
+  width: 5em;
+}
 
 .navigation {
   left: 0;
@@ -71,7 +74,6 @@ h4 {
 .navigation-item {
   float: left;
   margin-bottom: 0;
-  margin-left: 2.5rem;
   position: relative;
   color: #fff;
 }

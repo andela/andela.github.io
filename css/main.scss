@@ -171,7 +171,7 @@ body {
       cursor: pointer;
     }
   }
-  
+
   .projects {
     .thumbnails [class*="thumb-containers"] .card-content a:hover, .empty-thumbnails [class*="thumb-containers"] .card-content a:hover, .see-more-projects-container .see-more-projects:hover {
       background-color: #5f7de6;
@@ -183,11 +183,25 @@ body {
     padding: 100px 60px;
     font-weight: 400;
     font-size: 1.6em;
-    background: url("../images/hero.png") no-repeat center;
+    background: linear-gradient( rgba(0, 39, 62, 0.45), rgba(0,39,62,0.45) ), url("../images/hero.png");
+    background-position: center;
     background-size: cover;
     h1 {
       font-size: 1.7em;
       font-weight: 400;
+    }
+    h4{
+    color: white;
+    padding: 0px;
+    margin: 0px auto;
+    font-weight: 100;
+    text-align: center;
+    font-size: .7em;
+    width: 50%;
+    @media screen and (max-width: 480px) {
+        width: 80%; } 
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 70%; }
     }
   }
   .projects {
@@ -615,7 +629,7 @@ body {
   /* IE10 */
 }
 
-/* Multi Column Form (selectors for fieldsets and field wrappers) 
+/* Multi Column Form (selectors for fieldsets and field wrappers)
    ========================================================================== */
 
 .hs-form .hs-form fieldset {

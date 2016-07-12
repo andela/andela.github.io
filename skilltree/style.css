@@ -24,7 +24,7 @@ a {
 .cta-container {
   text-align: center;
 }
- 
+
 .button.skilltree-cta {
   background-color: #AC62D0;
   border: #AC62D0;
@@ -68,9 +68,17 @@ body {
       body #banner .container .header h2 {
         font-weight: 200;
         font-size: 2.6rem;
+        letter-spacing: 1px;
         margin: 0 auto;
         max-width: 900px;
         margin-top: -1rem; }
+        @media screen and (max-width: 480px) {
+          body #banner .container .header h2 {
+        font-size: 1.6em; } }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          body #banner .container .header h2{
+            font-size: 1.3em;
+            width: 30em; } }
     body #banner .container .player {
       margin: 0 auto;
       border-radius: 5px;
@@ -84,19 +92,51 @@ body {
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      height: 300px;
-      width: 600px;
+      height: 20em;
+      width: 40em;
       background-image: url(images/player.png); }
+      @media screen and (max-width: 480px) {
+        body #banner .container .player {
+          width: calc(40em/2);
+          height: calc(20em/2); } }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        body #banner .container .player {
+          width: 30em;
+          height: 15em; } }
       body #banner .container .player .play-icon {
         text-align: center;
         display: table-cell;
         vertical-align: middle;
         margin-top: 7rem; }
+      body #banner .container .player .play-icon a img {
+        width: 5em;
+        padding-bottom: 1em; }
+        @media screen and (max-width: 480px) {
+          body #banner .container .player .play-icon a img {
+            padding-bottom: 0; } }
+        @media screen and (max-width: 480px) {
+          body #banner .container .player .play-icon  {
+            margin-top: 2em; } }
+        @media screen and (max-width: 480px) {
+          body #banner .container .player .play-icon a img {
+            width: 3em; } }
+        @media screen and (max-width: 480px) {
+          body #banner .container .player .play-icon a p{
+            margin-top: 1em; } }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          body #banner .container .player .play-icon {
+            width: 18em;
+            margin-top: 3rem; } }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          body #banner .container .player .play-icon  a img {
+            width: 5em;
+            padding-bottom: 1em; } }
         body #banner .container .player .play-icon .text {
           color: #fff;
           font-size: 2rem;
           font-weight: 300;
           line-height: 0.5rem; }
+
   body .content {
     padding-top: 6rem; }
     body .content .row {

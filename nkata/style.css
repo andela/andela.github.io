@@ -96,6 +96,10 @@ a:hover {
 }
 
 
+#hero .row .column h2{
+  margin-top: 1em;
+}
+
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -302,7 +306,7 @@ body footer {
     width: 21%;
     padding: 25px 25px;
     display: inline-block;
-    margin-right: 30px; 
+    margin-right: 30px;
     text-align: left; }
     @media screen and (max-width: 480px) {
       body footer div[class$="footer"] {

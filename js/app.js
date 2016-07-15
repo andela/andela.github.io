@@ -7,19 +7,19 @@
     specialRepos = {
         executer: {
             casedTitle: 'executer',
-            type: 'opensource',
-            tags: []
+            type: 'mobile',
+            tags: ['JAVA', 'OBJECTIVE-C', 'FIREBASE', 'ANGULAR', 'NODE']
 
         },
         skilltree: {
             casedTitle: 'skilltree',
             type: 'web',
-            tags: []
+            tags: ['JAVASCRIPT', 'FIREBASE', 'ANGULAR', 'NODE', 'GULP', 'OAUTH']
         },
         nkata: {
             casedTitle: 'nkata',
-            type: 'mobile',
-            tags: []
+            type: 'opensource',
+            tags: ['OPENSOURCE', 'PYTHON']
         }
     };
 
@@ -30,7 +30,7 @@
         var temp_repos = [];
 
         $.each(repos, function(index, repo){
-            if (true) {
+            if (/#featured/i.test(repo.description)) {
                 temp_repos.push(repo);
             }
         });
@@ -44,12 +44,18 @@
     }
 
     function addRepo(repo) {
-        var specialRepoNameLookup = repo.full_name.substr('andela-cvundi/'.length);
+        var specialRepoNameLookup = repo.full_name.substr('andela/'.length);
 
         var specialRepo = specialRepos[specialRepoNameLookup];
         var description = repo.description.replace('#opensource', '');
 
         if (specialRepo) {
+
+            var tags = "";
+            $.each(specialRepo.tags, function(index, value) {
+                tags += '<span>' + value + '</span>';
+            });
+
             var $specialRepo = $('' +
                 '<div class="thumb-containers">' +
                     '<h5 class="tag ' + specialRepo.type + '">' + specialRepo.type + '</h5>' +
@@ -58,20 +64,9 @@
                     '</a>' +
                     '<div class="card-content">' +
                         '<h2 class="'+ specialRepo.type +'">' + specialRepo.casedTitle + '</h2>' +
-                    '</div>' +
-                    '<p>' + description + '</p>' +
-                    '<p class="tags">'  '</p>'
-
-                    '<div id="hidden_element">' +
-                        '<div class="image-holder">' +
-                            '<img src="/os-icons/' + specialRepo.icon + '-icon.png">' +
-                        '</div>' +
-                        '<h4>' + specialRepo.casedTitle + '</h4>' +
-                        '<hr>' +
                         '<p>' + description + '</p>' +
-                        '<hr>' +
-                        '<p><span class="executer-tag">' + specialRepo.casedTitle + '</span> <span class="executer-tag"> mobile </span> <span class="executer-tag"> andela </span></p>' +
-                        '<a href="#" class="executer-preview">PREVIEW</a>' +
+                        '<p class="tags">' + tags + '</p>' +
+                        '<a href="/'+ specialRepo.casedTitle +'" class="preview-button">VIEW PRODUCT</a>' +
                     '</div>' +
                 '</div>' +
             '');

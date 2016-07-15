@@ -30,7 +30,7 @@
         var temp_repos = [];
 
         $.each(repos, function(index, repo){
-            if (/#featured/i.test(repo.description)) {
+            if (true) {
                 temp_repos.push(repo);
             }
         });
@@ -44,7 +44,7 @@
     }
 
     function addRepo(repo) {
-        var specialRepoNameLookup = repo.full_name.substr('andela/'.length);
+        var specialRepoNameLookup = repo.full_name.substr('andela-cvundi/'.length);
 
         var specialRepo = specialRepos[specialRepoNameLookup];
         var description = repo.description.replace('#opensource', '');
@@ -76,6 +76,9 @@
         }
     }
 
+    // $.getJSON( "https://api.github.com/users/andela-cvundi/repos", function( x ) {
+    //   console.log(x);
+    // });
 
     // Get JSON data from the data folder containing repo info
     var data = {{ site.data | jsonify }}

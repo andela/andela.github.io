@@ -62,16 +62,17 @@ h4 {
 
 nav {
   position: absolute;
-  padding: 1rem 5rem;
-  max-width: 100%;
+  max-width: 90%;
   width: 90%;
 
   .nav-left {
     float: left;
+    padding: 1em 4em;
   }
 
   .nav-right {
     float: right;
+    padding: 1.5em 0em;
     a {
       margin-left: 1rem;
       &:hover {

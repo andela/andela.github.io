@@ -39,98 +39,58 @@ h4 {
 
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .logo {
-  width: 5em;
+  width: 6em;
 }
 
-.navigation {
-  left: 0;
-  max-width: 100%;
+.btn {
+  background: white;
+  padding: .4em;
+  color: rgb(51, 89, 223);
+  border-color: rgb(51, 89, 223);
+  border-radius: .3rem;
+  font-weight: 400;
+}
+
+.vertical_line {
+  border-right: 1px solid white;
+  height: 100%;
+  margin-left: .7rem;
+  margin-right: -.4rem;
+}
+
+nav {
   position: absolute;
-  right: 0;
-  top: 0;
-  max-width: 100vw;
-  z-index: 99;
-  .container {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding: 1rem 5rem;
+  max-width: 100%;
+  width: 90%;
+
+  .nav-left {
+    float: left;
   }
-  display: block;
-  width: 100%;
-}
 
-/* Re-overiding the width 100% declaration to match size of% based container */
-
-.navigation-list {
-  list-style: none;
-  margin: 0;
-}
-
-@media (min-width: 80rem) {
-  .navigation-list {
-    margin-right: 0;
+  .nav-right {
+    float: right;
+    a {
+      margin-left: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
-.navigation-item {
-  float: left;
-  margin-bottom: 0;
-  position: relative;
-  color: #fff;
-}
-
-.navigation {
-  .img {
-    position: relative;
-    top: .3rem;
-    height: 2.0rem;
-  }
-  .title {
-    color: #fff;
-    display: inline;
-    font-family: DINPro;    
-    line-height: 5.2rem;
-    font-size: 1.2rem;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-
-.navigation-title {
-  color: #fff;
-  display: inline;
-  font-family: DINPro;
-  line-height: 5.2rem;
-  font-size: 1.2rem;
-  padding: 0;
-  position: relative;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navigation-link {
-  display: inline;
-  line-height: 5.2rem;
-  font-size: 1.2rem;
-  padding: 0;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  &.active {
-    color: #606c76;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
-  &:visited {
-    color: #fff;
+@media screen and (max-width: 480px) {
+nav {
+    font-size: .7rem;
+    max-width: 100%;
+    width: 90%;
   }
 }
 
 body {
-  font-family: DINPro; 
+  font-family: DINPro;
   font-weight: 300;
   a {
     font-weight: 500;

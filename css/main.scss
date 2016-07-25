@@ -46,13 +46,19 @@ h4 {
 
 .btn {
   background: white;
-  padding: .4em;
+  padding: 10px 25px;
   color: rgb(51, 89, 223);
   border-color: rgb(51, 89, 223);
   border-radius: .3rem;
   font-weight: 400;
+  height: 43px;
+  text-transform: uppercase;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
-
 .vertical_line {
   border-right: 1px solid white;
   height: 100%;
@@ -64,19 +70,38 @@ nav {
   position: absolute;
   max-width: 90%;
   width: 90%;
-
   .nav-left {
     float: left;
     padding: 1em 4em;
   }
+  // .navigation {
+  //   .img {
+  //     position: relative;
+  //     top: .3rem;
+  //     height: 2.0rem;
+  //   }
+  // .title {
+  //   color: #fff;
+  //   display: inline;
+  //   font-family: DINPro;
+  //   line-height: 5.2rem;
+  //   font-size: 1.2rem;
+  //   padding: 0;
+  //   position: relative;
+  //   text-decoration: none;
+  //   font-weight: bold;
+  // }
 
   .nav-right {
     float: right;
     padding: 1.5em 0em;
     a {
       margin-left: 1rem;
-      &:hover {
-        text-decoration: underline;
+      text-decoration: none;
+      &:first-child { 
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -94,7 +119,6 @@ body {
   font-family: DINPro;
   font-weight: 300;
   a {
-    font-weight: 500;
     border: none;
     width: 30%;
     color: white;

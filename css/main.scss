@@ -4,7 +4,7 @@
 @import url("../font/font.css");
 
 
-h3, body section h3 {
+h3 {
   font-weight: 100;
   color: #757F8F;
   text-align: center;
@@ -70,35 +70,20 @@ nav {
   position: absolute;
   max-width: 90%;
   width: 90%;
+
   .nav-left {
     float: left;
     padding: 1em 4em;
   }
-  // .navigation {
-  //   .img {
-  //     position: relative;
-  //     top: .3rem;
-  //     height: 2.0rem;
-  //   }
-  // .title {
-  //   color: #fff;
-  //   display: inline;
-  //   font-family: DINPro;
-  //   line-height: 5.2rem;
-  //   font-size: 1.2rem;
-  //   padding: 0;
-  //   position: relative;
-  //   text-decoration: none;
-  //   font-weight: bold;
-  // }
 
   .nav-right {
     float: right;
     padding: 1.5em 0em;
+
     a {
       margin-left: 1rem;
       text-decoration: none;
-      &:first-child { 
+      &:first-child {
         &:hover {
           text-decoration: underline;
         }
@@ -118,30 +103,16 @@ nav {
 body {
   font-family: DINPro;
   font-weight: 300;
+
   a {
     border: none;
     width: 30%;
     color: white;
-    // padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-    // display: inline-block;
-    // margin: 4px 2px;
     cursor: pointer;
-    // &:hover {
-    //   font-weight: 500;
-    //   background-color: #3359DF;
-    //   border: none;
-    //   width: 30%;
-    //   color: white;
-    //   padding: 15px 30px;
-    //   text-align: center;
-    //   text-decoration: none;
-    //   display: inline-block;
-    //   margin: 4px 2px;
-    //   cursor: pointer;
-    // }
   }
+
   .projects {
     .thumbnails [class*="thumb-containers"] .card-content a, .empty-thumbnails [class*="thumb-containers"] .card-content a, .see-more-projects-container .see-more-projects {
       font-weight: 500;
@@ -163,6 +134,7 @@ body {
       background-color: #5f7de6;
     }
   }
+
   .hero {
     color: white;
     text-align: center;
@@ -172,54 +144,68 @@ body {
     background: linear-gradient( rgba(0, 39, 62, 0.45), rgba(0,39,62,0.45) ), url("../images/hero.png");
     background-position: center;
     background-size: cover;
+
     h1 {
       font-size: 1.7em;
       font-weight: 700;
     }
-    h4{
-    color: white;
-    padding: 0px;
-    margin: 0px auto;
-    font-weight: 100;
-    text-align: center;
-    font-size: .7em;
-    width: 50%;
-    @media screen and (max-width: 480px) {
-        width: 80%; }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        width: 70%; }
+
+    h4 {
+      color: white;
+      padding: 0px;
+      margin: 0px auto;
+      font-weight: 100;
+      text-align: center;
+      font-size: .7em;
+      width: 50%;
+
+      @media screen and (max-width: 480px) {
+        width: 80%;
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 70%;
+      }
     }
   }
+
   .tag {
     text-align: left;
     padding-left: 5px;
     margin-bottom: 1em;
     text-transform: uppercase;
   }
+
   .web {
     border-left: 2px solid #6376f9;
   }
+
   .mobile {
     border-left: 2px solid #f0405e;
   }
+
   .opensource {
     border-left: 2px solid #0fd8e8;
   }
+
   .projects {
     background-color: #FBFBFB;
     padding: 30px 80px;
     padding-bottom: 80px;
+
     h3 {
       margin: 4%;
     }
+
     .thumbnails, .empty-thumbnails {
       display: flex;
     }
+
     .thumbnails [class*="thumb-containers"], .empty-thumbnails [class*="thumb-containers"] {
       display: inline-block;
       width: 30%;
       margin-left: 2%;
     }
+
     .thumbnails [class*="thumb-containers"] .image-holder, .empty-thumbnails [class*="thumb-containers"] .image-holder, .thumbnails [class*="thumb-containers"] .executer-image-holder, .empty-thumbnails [class*="thumb-containers"] .executer-image-holder, .thumbnails [class*="thumb-containers"] .skilltree-image-holder, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder, .thumbnails [class*="thumb-containers"] .nkata-image-holder, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
       display: flex;
       height: 200px;
@@ -239,33 +225,39 @@ body {
         height: 100%;
       }
     }
+
     .thumbnails [class*="thumb-containers"] .image-holder img, .empty-thumbnails [class*="thumb-containers"] .image-holder img, .thumbnails [class*="thumb-containers"] .executer-image-holder img, .empty-thumbnails [class*="thumb-containers"] .executer-image-holder img, .thumbnails [class*="thumb-containers"] .skilltree-image-holder img, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder img, .thumbnails [class*="thumb-containers"] .nkata-image-holder img, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder img {
       width: 100px;
       margin: auto;
       z-index: 9999;
     }
+
     .thumbnails [class*="thumb-containers"] .skilltree-image-holder, .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
       &::before {
         background-image: url('../images/Skilltree_Screenshot.png');
         background-size: cover;
       }
     }
+
     .thumbnails [class*="thumb-containers"] .nkata-image-holder, .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
       &::before {
         background-image: url('../images/Nkata_Screenshot.png');
         background-size: cover;
       }
     }
+
     .thumbnails [class*="thumb-containers"] .card-content, .empty-thumbnails [class*="thumb-containers"] .card-content {
       margin-bottom: 10%;
       padding-bottom: 6%;
       border: 1px solid #e3e3e3;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content h2, .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
       font-weight: 100;
       padding: 0px 20px;
       text-transform: uppercase;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content p, .empty-thumbnails [class*="thumb-containers"] .card-content p {
       height: 50px;
       padding: 0px 20px;
@@ -273,9 +265,11 @@ body {
       font-weight: 100;
       font-size: .8em;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content .tags, .empty-thumbnails [class*="thumb-containers"] .card-content .tags {
       margin-top: 4em;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content .tags span, .empty-thumbnails [class*="thumb-containers"] .card-content .tags span {
       margin-top: 300px;
       text-transform: uppercase;
@@ -283,12 +277,14 @@ body {
       font-size: .65em;
       font-weight: 700;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content .tags span::before, .empty-thumbnails [class*="thumb-containers"] .card-content .tags span::before {
       content: "\25CF";
       font-weight: 100;
       font-size: .3em;
       padding: 0px 3px;
     }
+
     .thumbnails [class*="thumb-containers"] .card-content a, .empty-thumbnails [class*="thumb-containers"] .card-content a, .thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, .see-more-projects-container .thumbnails [class*="thumb-containers"] .card-content .see-more-projects, .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, .see-more-projects-container .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects {
       font-weight: 200;
       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
@@ -299,9 +295,11 @@ body {
       margin: 0px 20px;
       font-weight: 500;
     }
+
     .empty-thumbnails {
       margin-top: 30px;
       height: 370px;
+
       .thumb-containers {
         background: url("../images/coming_soon.png") repeat center;
         background-size: cover;
@@ -310,6 +308,7 @@ body {
     .see-more-projects-container {
       display: flex;
       margin-top: 5%;
+
       .see-more-projects {
         pointer-events: none;
         background-color: grey;
@@ -321,16 +320,19 @@ body {
       }
     }
   }
+
   section {
     height: 30%;
     background-color: #F1F1F1;
     text-align: center;
     padding: 40px 50px;
+
     h3 {
       font-weight: 700;
       color: #3A3A3A;
       font-size: 2em;
     }
+
     input {
       width: 50%;
       padding: 12px 20px;
@@ -340,6 +342,7 @@ body {
       border-radius: 0px;
       box-sizing: border-box;
     }
+
     button {
       padding: 15px 20px;
       color: white;
@@ -355,6 +358,7 @@ body {
       }
     }
   }
+
   .hs-button.primary {
     position: relative;
     display: block;
@@ -386,9 +390,9 @@ body {
     border: 0;
     margin: 5px 0;
     float: left;
-    /* border: 1px solid #3359df; */
     padding: 0;
   }
+
   input {
     &[type="submit"], &[type="button"] {
       position: relative;
@@ -421,15 +425,16 @@ body {
       border: 0;
       margin: 5px 0;
       float: left;
-      /* border: 1px solid #3359df; */
       padding: 0;
     }
   }
+
   .hs-button.primary:hover {
     color: #3359df;
     background: #fff;
     border: 1px solid #3359df;
   }
+
   input {
     &[type="submit"]:hover, &[type="button"]:hover {
       color: #3359df;
@@ -437,14 +442,17 @@ body {
       border: 1px solid #3359df;
     }
   }
+
   .hs-button.primary:focus {
     border: 1px solid #3359df;
   }
+
   input {
     &[type="submit"]:focus, &[type="button"]:focus {
       border: 1px solid #3359df;
     }
   }
+
   footer {
     display: block;
     font-size: .8em;
@@ -453,13 +461,16 @@ body {
     background-color: #16171D;
     padding: 40px;
     text-align: center;
+
     span {
       display: block;
     }
+
     h4 {
       color: white;
       text-align: left;
     }
+
     div[class$="footer"] {
       width: 21%;
       padding: 25px 25px;
@@ -467,19 +478,25 @@ body {
       margin-right: 30px;
       text-align: left;
     }
+
     .andela-footer {
       color: #9B9B9B;
+
       img {
         display: block;
         width: 30%;
         margin-bottom: 20px;
       }
-      .navigation-footer, .projects-footer {
+
+      .navigation-footer,
+      .projects-footer {
         width: 15%;
       }
+
       .navigation-footer span {
         padding: 1em 1em;
       }
+
       .projects-footer ul li {
         list-style-type: none;
       }
@@ -540,7 +557,6 @@ body {
     &[type="text"], &[type="password"], &[type="datetime"], &[type="datetime-local"], &[type="date"], &[type="month"], &[type="time"], &[type="week"], &[type="number"], &[type="email"], &[type="url"], &[type="search"], &[type="tel"], &[type="color"], &[type="file"] {
       background-color: #ffffff;
       color: #949494;
-      /* border-radius: 4px; */
       font-size: 14px;
       height: 43px;
       max-height: 100px;
@@ -555,14 +571,12 @@ body {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 100%;
-      /*border: 1px solid #fafafa;*/
       margin: 5px 0;
     }
   }
   textarea, select {
     background-color: #ffffff;
     color: #949494;
-    /* border-radius: 4px; */
     font-size: 14px;
     height: 43px;
     max-height: 100px;
@@ -584,31 +598,19 @@ body {
     &[type="email"] {
       -webkit-appearance: none;
       -moz-appearance: none;
-      /*border: 1px solid inherit;*/
     }
     &[type="text"]:focus, &[type="password"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus, &[type="file"]:focus {
       color: #949494;
       background-color: #ffffff;
       border: 1px solid #3359df;
-      /* margin: 5px; */
     }
   }
   textarea:focus, select:focus {
     color: #949494;
     background-color: #ffffff;
     border: 1px solid #3359df;
-    /* margin: 5px; */
   }
-  textarea:focus, select:focus, form.hs-form .hs-form-field ul.inputs-list li input {}
-  input {
-    &[type="radio"], &[type="checkbox"] {}
-    &:focus:required:invalid {
-      /*border: 1px solid #e74c3c; */
-    }
-  }
-  textarea:focus:required:invalid, select:focus:required:invalid, input:focus:required:nvalid:focus, textarea:focus:required:invalid:focus, select:focus:required:invalid:focus {
-    /*border: 1px solid #e74c3c; */
-  }
+
   .hs-error-msgs label {
     text-align: left;
     color: #e74c3c;

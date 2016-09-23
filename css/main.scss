@@ -2,53 +2,31 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import url("../font/font.css");
+@import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
 
-
-h3 {
-  font-weight: 100;
-  color: #757F8F;
-  text-align: center;
-  font-size: 1.5em;
+body {
+  margin: 0 auto;
+  font-family: DINPro;
+  font-weight: 300;
 }
 
-h4 {
-  color: black;
-  padding: 0px;
-  margin: 0px;
-  font-weight: 500;
-  text-align: center;
-  font-size: 1.3em;
-}
-
-#footer-link {
-  list-style: none;
-  font-weight: 500;
-  background-color: transparent;
-  border: none;
-  width: 60%;
-  color: #5D5D5D;
-  padding: 0;
-  text-align: left;
+a {
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 0px;
-  &:hover {
-    color: white;
-  }
+  cursor: pointer;
 }
 
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .logo {
-  width: 6em;
+  width: 13rem;
 }
 
 .btn {
   background: white;
   padding: 10px 25px;
-  color: rgb(51, 89, 223);
-  border-color: rgb(51, 89, 223);
+  color: #527ae5 !important;
+  border-color: #527ae5;
   border-radius: .3rem;
   font-weight: 400;
   height: 43px;
@@ -59,6 +37,7 @@ h4 {
     }
   }
 }
+
 .vertical_line {
   border-right: 1px solid white;
   height: 100%;
@@ -70,10 +49,11 @@ nav {
   position: absolute;
   max-width: 90%;
   width: 90%;
+  margin-left: 9rem;
 
   .nav-left {
     float: left;
-    padding: 1em 4em;
+    padding: 1em 0;
   }
 
   .nav-right {
@@ -83,11 +63,7 @@ nav {
     a {
       margin-left: 1rem;
       text-decoration: none;
-      &:first-child {
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+      color: white;
     }
   }
 }
@@ -100,256 +76,323 @@ nav {
   }
 }
 
-body {
-  font-family: DINPro;
-  font-weight: 300;
+.hero {
+  color: white;
+  text-align: center;
+  padding: 100px 60px;
+  font-weight: 400;
+  font-size: 1.6em;
+  background: linear-gradient(rgba(0, 39, 62, 0.45), rgba(0, 39, 62, 0.45)), url(../images/hero.png);
+  background-position: center;
+  background-size: cover;
 
-  a {
-    border: none;
-    width: 30%;
+  h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+  h4 {
     color: white;
+    padding: 0px;
+    margin: 0px auto;
+    font-weight: 100;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
+    font-size: .7em;
+    width: 50%;
+  }
+}
+
+
+
+
+.products {
+  .skilltree {
+    max-width: 85%;
+    margin: 4rem auto 0;
   }
 
-  .projects {
-    .thumbnails [class*="thumb-containers"] .card-content a,
-    .empty-thumbnails [class*="thumb-containers"] .card-content a,
-    .see-more-projects-container .see-more-projects {
-      font-weight: 500;
-      background-color: #3359DF;
-      border: none;
-      width: 30%;
-      color: white;
-      padding: 15px 30px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+  .executer {
+    max-width: 85%;
+    margin: 4rem auto 0;
   }
 
-  .projects {
-    .thumbnails [class*="thumb-containers"] .card-content a:hover,
-    .empty-thumbnails [class*="thumb-containers"] .card-content a:hover,
-    .see-more-projects-container .see-more-projects:hover {
-      background-color: #5f7de6;
-    }
+  .nkata {
+    max-width: 85%;
+    margin: 4rem auto 0;
   }
 
-  .hero {
-    color: white;
-    text-align: center;
-    padding: 100px 60px;
-    font-weight: 400;
-    font-size: 1.6em;
-    background: linear-gradient( rgba(0, 39, 62, 0.45), rgba(0,39,62,0.45) ), url("../images/hero.png");
-    background-position: center;
-    background-size: cover;
-
-    h1 {
-      font-size: 1.7em;
-      font-weight: 700;
-    }
-
-    h4 {
-      color: white;
-      padding: 0px;
-      margin: 0px auto;
-      font-weight: 100;
-      text-align: center;
-      font-size: .7em;
-      width: 50%;
-
-      @media screen and (max-width: 480px) {
-        width: 80%;
-      }
-      @media screen and (min-width: 481px) and (max-width: 768px) {
-        width: 70%;
-      }
-    }
+  hr {
+    margin: 0;
   }
 
-  .tag {
-    text-align: left;
-    padding-left: 5px;
-    margin-bottom: 1em;
+  .type {
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: .1rem 1rem;
+    letter-spacing: 0.6px;
   }
 
-  .web {
-    border-left: 2px solid #6376f9;
+  .web-app {
+    color: #768efb;
+    @extend .type;
   }
 
-  .mobile {
-    border-left: 2px solid #f0405e;
+  .mobile-app {
+    color: #f0405e;
+    @extend .type;
   }
 
-  .opensource {
-    border-left: 2px solid #0fd8e8;
+  .open-source {
+    color: #00deed;
+    @extend .type;
   }
 
-  .projects {
-    background-color: #FBFBFB;
-    padding: 30px 80px;
-    padding-bottom: 80px;
+  .app-name {
+    margin: 0 1rem 1.5rem;
+    color: #28307b;
 
-    h3 {
-      margin: 4%;
+  }
+
+  .prod-image {
+    .browser {
+      width: 65rem;
+      height: auto;
     }
 
-    .thumbnails, .empty-thumbnails {
-      display: block;
+    .mobile {
+      width: 40rem;
+      height: auto;
     }
+  }
 
-    .thumbnails [class*="thumb-containers"], .empty-thumbnails [class*="thumb-containers"] {
-      display: inline-block;
-      width: 30%;
-      margin-left: 2%;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .prod-row {
+      flex-direction: column;
     }
+    .prod-image {
+      text-align: center;
 
-    .thumbnails [class*="thumb-containers"] .image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .image-holder,
-    .thumbnails [class*="thumb-containers"] .executer-image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .executer-image-holder,
-    .thumbnails [class*="thumb-containers"] .skilltree-image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder,
-    .thumbnails [class*="thumb-containers"] .nkata-image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
-      display: block;
-      height: 200px;
-      position: relative;
-      left: 0;
-      right: 0;
-      border: 1px solid #e3e3e3;
+      .browser {
+        width: 65rem;
+        height: auto;
+      }
 
-      &::before {
-        content: "";
-        background-image: url("../images/Executer_Screenshot.png");
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      .mobile {
+        width: 40rem;
+        height: auto;
       }
     }
 
-    .thumbnails [class*="thumb-containers"] .image-holder img,
-    .empty-thumbnails [class*="thumb-containers"] .image-holder img,
-    .thumbnails [class*="thumb-containers"] .executer-image-holder img,
-    .empty-thumbnails [class*="thumb-containers"] .executer-image-holder img,
-    .thumbnails [class*="thumb-containers"] .skilltree-image-holder img,
-    .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder img,
-    .thumbnails [class*="thumb-containers"] .nkata-image-holder img,
-    .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder img {
-      width: 100px;
-      margin: auto;
-      z-index: 9999;
+    .prod-description {
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #283071;
     }
 
-    .thumbnails [class*="thumb-containers"] .skilltree-image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .skilltree-image-holder {
-      &::before {
-        background-image: url('../images/Skilltree_Screenshot.png');
-        background-size: cover;
-      }
+    .skill-description {
+      @extend .prod-description;
+      padding: 11rem 0 4rem 8rem;
     }
 
-    .thumbnails [class*="thumb-containers"] .nkata-image-holder,
-    .empty-thumbnails [class*="thumb-containers"] .nkata-image-holder {
-      &::before {
-        background-image: url('../images/Nkata_Screenshot.png');
-        background-size: cover;
-      }
+    .exec-description {
+      @extend .prod-description;
+      padding: 11rem 0rem 4rem 0;
     }
 
-    .thumbnails [class*="thumb-containers"] .card-content,
-    .empty-thumbnails [class*="thumb-containers"] .card-content {
-      margin-bottom: 10%;
-      padding-bottom: 6%;
-      border: 1px solid #e3e3e3;
+    .nkata-description {
+      @extend .prod-description;
+      padding: 11rem 0 4rem 8rem;
     }
 
-    .thumbnails [class*="thumb-containers"] .card-content h2,
-    .empty-thumbnails [class*="thumb-containers"] .card-content h2 {
-      font-weight: 100;
-      padding: 0px 20px;
+    .prod-type {
       text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.6rem;
+      margin: .1rem 9rem;
+      letter-spacing: 0.6px;
     }
 
-    .thumbnails [class*="thumb-containers"] .card-content p,
-    .empty-thumbnails [class*="thumb-containers"] .card-content p {
-      height: 50px;
-      padding: 0px 20px;
-      margin: 0;
-      font-weight: 100;
-      font-size: .8em;
+    .web-app {
+      color: #768efb;
+      @extend .prod-type;
     }
 
-    .thumbnails [class*="thumb-containers"] .card-content .tags,
-    .empty-thumbnails [class*="thumb-containers"] .card-content .tags {
-      margin-top: 4em;
+    .mobile-app {
+      color: #f0405e;
+      @extend .prod-type;
     }
 
-    .thumbnails [class*="thumb-containers"] .card-content .tags span,
-    .empty-thumbnails [class*="thumb-containers"] .card-content .tags span {
-      margin-top: 300px;
+    .open-source {
+      color: #00deed;
+      @extend .prod-type;
+    }
+
+    .app-name {
+      margin: 0 9rem 1.5rem;
+      color: #28307b;
+
+    }
+
+
+
+  }
+
+  .description {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    color: #283071;
+  }
+
+  .skill-description {
+    @extend .description;
+    padding: 11rem 0 4rem 8rem;
+  }
+
+  .exec-description {
+    @extend .description;
+    padding: 11rem 16rem 4rem 0;
+  }
+
+  .nkata-description {
+    @extend .description;
+    padding: 11rem 0 4rem 8rem;
+  }
+
+  .skill-separator {
+    height: .7rem;
+    width: 5rem;
+    background: #6376f9;
+  }
+
+  .exec-separator {
+    height: .7rem;
+    width: 5rem;
+    background: #f0405e;
+  }
+
+  .nkata-separator {
+    height: .7rem;
+    width: 5rem;
+    background: #00deed;
+  }
+
+  .tags {
+    margin-top: 2.5rem;
+
+    span {
       text-transform: uppercase;
       padding-right: 5px;
-      font-size: .65em;
+      font-size: 1.3rem;
       font-weight: 700;
-    }
+      color: #000000;
 
-    .thumbnails [class*="thumb-containers"] .card-content .tags span::before,
-    .empty-thumbnails [class*="thumb-containers"] .card-content .tags span::before {
-      content: "\25CF";
-      font-weight: 100;
-      font-size: .3em;
-      padding: 0px 3px;
-    }
-
-    .thumbnails [class*="thumb-containers"] .card-content a,
-    .empty-thumbnails [class*="thumb-containers"] .card-content a,
-    .thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects,.see-more-projects-container .thumbnails [class*="thumb-containers"] .card-content .see-more-projects, .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects-container .see-more-projects, .see-more-projects-container .empty-thumbnails [class*="thumb-containers"] .card-content .see-more-projects {
-      font-weight: 200;
-      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-      border-radius: 4px;
-      width: 50%;
-      padding: 10px 20px;
-      text-align: center;
-      margin: 0px 20px;
-      font-weight: 500;
-    }
-
-    .empty-thumbnails {
-      margin-top: 30px;
-      height: 370px;
-
-      .thumb-containers {
-        background: url("../images/coming_soon.png") repeat center;
-        background-size: cover;
-      }
-    }
-    .see-more-projects-container {
-      display: flex;
-      margin-top: 5%;
-
-      .see-more-projects {
-        pointer-events: none;
-        background-color: grey;
-        text-align: center;
-        display: inline-block;
-        width: 20%;
-        margin: 0 auto;
-        padding: 20px;
+      &:before {
+        content: "\25CF";
+        font-weight: 100;
+        font-size: 1.4rem;
+        padding: 0.2rem;
       }
     }
   }
+}
 
-  section {
+.lib-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.libraries {
+    color: #fff;
+    position: relative;
+    background: radial-gradient(rgb(103, 108, 160), rgb(69, 76, 162));
+    background: -webkit-radial-gradient(rgb(103, 108, 160), rgb(69, 76, 162));
+    padding: 8rem 0;
+
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 6rem;
+    }
+}
+
+
+.card {
+  left: 0;
+  right: 0;
+  width: 80%;
+  cursor: pointer;
+  margin-right: 10rem;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .column-description {
+    background: rgb(105, 109, 158);
+
+    h4 {
+      font-size: 2rem;
+      margin: .5rem auto;
+    }
+
+    .arrow  {
+      position: absolute;
+      margin-top: -12%;
+      margin-left: 61%;
+    }
+  }
+
+
+  .column-icon {
+    background: rgb(125, 130, 179);
+
+
+    .icon {
+      text-align: center;
+      position: relative;
+      transform: translateY(38%);
+
+      img {
+        height: auto;
+        width: 4.3rem;
+      }
+    }
+  }
+}
+
+
+.cta-section {
+  width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 7rem 0;
+  color: #283071;
+
+  p {
+    font-size: 2.9rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    padding-top: 2rem;
+  }
+
+  .cta-button {
+    margin-left: 15rem;
+    padding: 2rem 7rem;
+    border: .5rem solid #283071;
+    color: #283071;
+    border-radius: 4px;
+    font-size: 2rem;
+  }
+
+}
+
+section {
     height: 30%;
     background-color: #F1F1F1;
     text-align: center;
@@ -492,20 +535,52 @@ body {
     padding: 40px;
     text-align: center;
 
+
+    #footer-link {
+      list-style: none;
+      font-weight: 500;
+      background-color: transparent;
+      border: none;
+      width: 60%;
+      color: #5D5D5D;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 0px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
     span {
       display: block;
     }
 
+    h3 {
+      font-weight: 100;
+      color: #757F8F;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
     h4 {
       color: white;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 500;
+      text-align: center;
+      font-size: 1.3em;
       text-align: left;
     }
+
 
     div[class$="footer"] {
       width: 21%;
       padding: 25px 25px;
       display: inline-block;
-      margin-right: 30px;
+      margin-right: 5rem;
       text-align: left;
     }
 
@@ -529,9 +604,9 @@ body {
 
       .projects-footer ul li {
         list-style-type: none;
+        margin-right: 0px;
       }
     }
-  }
 }
 
 /* All HubSpot Forms
@@ -586,7 +661,11 @@ body {
 .hs-form {
   .hs-field-desc,
   label,
-  .hs-form-field > label {}
+  .hs-form-field > label {
+    font-weight: 300;
+    text-align:  center;
+    display: inline;
+  }
   input {
     &[type="text"],
     &[type="password"],
@@ -776,48 +855,6 @@ body {
     .thumbnails, .empty-thumbnails {
       flex-direction: column;
     }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body .projects {
-    .thumbnails [class*="thumb-containers"], .empty-thumbnails [class*="thumb-containers"] {
-      width: 96%;
-      margin: 4% 2%;
-    }
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body .projects {
-    .thumbnails [class*="thumb-containers"], .empty-thumbnails [class*="thumb-containers"] {
-      margin: 5% auto;
-      width: 70%;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body .projects .empty-thumbnails {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body .projects .empty-thumbnails {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body .projects .see-more-projects-container .see-more-projects {
-    width: 70%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body .projects .see-more-projects-container .see-more-projects {
-    width: 50%;
   }
 }
 

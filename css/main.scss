@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import url("../font/font.css");
-@import "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 
 body {
   margin: 0 auto;
@@ -27,7 +27,7 @@ a {
   padding: 10px 25px;
   color: #527ae5 !important;
   border-color: #527ae5;
-  border-radius: .3rem;
+  border-radius: 4px;
   font-weight: 400;
   height: 43px;
   text-transform: uppercase;
@@ -49,11 +49,11 @@ nav {
   position: absolute;
   max-width: 90%;
   width: 90%;
-  margin-left: 9rem;
+  // margin-left: 9rem;
 
   .nav-left {
     float: left;
-    padding: 1em 0;
+    padding: 1em 0 1em 7em;
   }
 
   .nav-right {
@@ -79,7 +79,7 @@ nav {
 .hero {
   color: white;
   text-align: center;
-  padding: 100px 60px;
+  padding: 115px 60px;
   font-weight: 400;
   font-size: 1.6em;
   background: linear-gradient(rgba(0, 39, 62, 0.45), rgba(0, 39, 62, 0.45)), url(../images/hero.png);
@@ -97,7 +97,7 @@ nav {
     margin: 0px auto;
     font-weight: 100;
     text-align: center;
-    font-size: .7em;
+    font-size: 2rem;
     width: 50%;
   }
 }
@@ -197,7 +197,7 @@ nav {
 
     .exec-description {
       @extend .prod-description;
-      padding: 11rem 0rem 4rem 0;
+      padding: 11rem 0 4rem 0rem;
     }
 
     .nkata-description {
@@ -314,7 +314,8 @@ nav {
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 2px;
-      margin-bottom: 6rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
     }
 }
 
@@ -322,40 +323,47 @@ nav {
 .card {
   left: 0;
   right: 0;
-  width: 80%;
   cursor: pointer;
-  margin-right: 10rem;
+  margin-bottom: 2rem;
   position: relative;
+  display: flex;
 
-  &:last-child {
-    margin-right: 0;
-  }
 
   .column-description {
     background: rgb(105, 109, 158);
+    padding: 1rem 2rem;
 
     h4 {
       font-size: 2rem;
       margin: .5rem auto;
     }
 
+    p {
+      font-size: 1.7rem;
+    }
+
     .arrow  {
       position: absolute;
-      margin-top: -12%;
-      margin-left: 61%;
+      margin-top: -10%;
+      margin-left: 74%;
+
+      img {
+        width: 3rem;
+      }
+
     }
   }
 
 
   .column-icon {
-    background: rgb(125, 130, 179);
+    background: #7d82b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
     .icon {
-      text-align: center;
-      position: relative;
-      transform: translateY(38%);
-
       img {
         height: auto;
         width: 4.3rem;
@@ -372,22 +380,37 @@ nav {
   padding: 7rem 0;
   color: #283071;
 
+  .cta-row {
+    padding-top: 1rem;
+
+    .button {
+      margin-top: .7rem;
+    }
+
+
+  }
+
   p {
     font-size: 2.9rem;
-    margin: 0;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .1rem;
-    padding-top: 2rem;
   }
 
   .cta-button {
-    margin-left: 15rem;
-    padding: 2rem 7rem;
+    padding: 1.3rem 7rem;
     border: .5rem solid #283071;
     color: #283071;
     border-radius: 4px;
     font-size: 2rem;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      border: .5rem solid #283071;
+      background: #283071;
+
+    }
   }
 
 }
@@ -615,7 +638,7 @@ section {
 
 .hbspt-form {
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding-bottom: 5rem;
 }
 
@@ -823,40 +846,7 @@ section {
   }
 }
 
-@media screen and (max-width: 480px) {
-  body .projects {
-    padding: 0;
-    padding-bottom: 30%;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  body .projects h3 {
-    margin: 7%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body .projects h3 {
-    margin: 10%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body .projects {
-    .thumbnails, .empty-thumbnails {
-      flex-direction: column;
-    }
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body .projects {
-    .thumbnails, .empty-thumbnails {
-      flex-direction: column;
-    }
-  }
-}
 
 @media screen and (max-width: 480px) {
   body section input {

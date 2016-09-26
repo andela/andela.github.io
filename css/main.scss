@@ -244,11 +244,7 @@ nav {
     .app-name {
       margin: 0 9rem 1.5rem;
       color: #28307b;
-
     }
-
-
-
   }
 
   .description {
@@ -344,7 +340,7 @@ nav {
   margin-bottom: 2rem;
   position: relative;
   display: flex;
-
+  cursor: pointer;
 
   .column-description {
     background: rgb(105, 109, 158);

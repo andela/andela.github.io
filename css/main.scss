@@ -340,7 +340,32 @@ nav {
   margin-bottom: 2rem;
   position: relative;
   display: flex;
-  cursor: pointer;
+  height: 14rem;
+  color: #fff;
+  text-decoration: none;
+
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+  }
+
+  .arrow  {
+    position: absolute;
+    margin-top: -4%;
+    margin-left: 80%;
+
+    img {
+      width: 2.3rem;
+    }
+  }
 
   .column-description {
     background: rgb(105, 109, 158);
@@ -353,17 +378,6 @@ nav {
 
     p {
       font-size: 1.7rem;
-    }
-
-    .arrow  {
-      position: absolute;
-      margin-top: -10%;
-      margin-left: 74%;
-
-      img {
-        width: 3rem;
-      }
-
     }
   }
 
@@ -946,4 +960,37 @@ section {
       padding-top: .5em;
     }
   }
+}
+
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+  left: -12px;
+    height: 40px;
+  width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 5rem;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #fff;
+}
+.carousel-indicators .active {
+background: #34375c;
 }

@@ -418,14 +418,14 @@ nav {
   width: 85%;
   margin: 0 auto;
   background: #fff;
-  padding: 7rem 0;
+  padding: 4rem 0;
   color: #283071;
 
   .cta-row {
-    padding-top: 1rem 0 2rem;
+    margin-top: 2rem 0;
 
     .button {
-      margin-top: .7rem;
+      margin-top: 1.9rem;
     }
   }
 
@@ -434,6 +434,7 @@ nav {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .1rem;
+    margin-top: 1.6rem;
   }
 
   .cta-button {
@@ -896,14 +897,44 @@ section {
 
 
 @media screen and (max-width: 480px) {
-  body section input {
-    width: 100%;
+  .hs-form {
+
+    .hs-form-field {
+      width: 100%;
+    }
+
+    .hs_submit {
+      width: 100%;
+    }
+
+    .hs-error-msgs {
+      display: none;
+
+      label {
+        display: none;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  body section input {
-    width: 100%;
+  .hs-form {
+
+    .hs-form-field {
+      width: 100%;
+    }
+
+    .hs_submit {
+      width: 100%;
+    }
+
+    .hs-error-msgs {
+      display: none;
+
+      label {
+        display: none;
+      }
+    }
   }
 }
 

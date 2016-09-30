@@ -1050,3 +1050,106 @@ section {
 .carousel-indicators .active {
 background: #34375c;
 }
+
+/** Cards **/
+.contributions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background: #011330;
+  text-align: center;
+  h1 {
+    order: 1;
+    color: #fff;
+  }
+  .cards {
+    order: 2;
+  }
+  p {
+    order: 3;
+    color: #fff;
+  }
+}
+
+.cards {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  .card {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.10);
+    border-radius: 4px;
+    padding: 0.3em;
+    margin: auto 0.5em;
+    width: 220px;
+    .card__content {
+      transition: 1s all ease-in-out;
+      padding: 0.5em 1em;
+      .card__title {
+        font-family: DINPro;
+        letter-spacing: 2px;
+        h3 {
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+      }
+      .card__body {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.count-up {
+  font-size: 3em; 
+  font-weight: 700;
+  color: #848C97;
+  font-family: DINPro;
+  letter-spacing: 5px;
+}
+
+.projects {
+  border: 1px solid #F7941E;
+  .card__title {
+    color: #F7941E;
+  }
+}
+
+.pull-requests {
+  border: 1px solid #F0405E;
+  .card__title {
+    color: #F0405E;
+  }
+}
+
+.commits {
+   border: 1px solid #77CF42;
+  .card__title {
+    color: #77CF42;
+  }
+}
+
+#time-difference {
+ color: #F0405E;
+}
+
+@media only screen and (max-width: 480px) {
+ .cards {
+    flex-direction: column;
+    justify-content: space-around;
+    .card {
+      margin: 1em auto;
+    }
+ }
+}

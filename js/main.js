@@ -10,34 +10,7 @@ $(document).ready(function(){
     $(this).children("#hidden_element").hide();
   });
 
-    var options = {
-      useEasing : true, 
-      useGrouping : true, 
-      separator : ',', 
-      decimal : '.', 
-      prefix : '', 
-      suffix : '' 
-    };
-    var commitsCount = new CountUp("commitsCount", 0, 3084, 0, 6, options);
-    commitsCount.start();
-    var mergedPRsCount = new CountUp("mergedPRsCount", 0, 599, 0, 4, options);
-    mergedPRsCount.start();
-    var projectsCount = new CountUp("projectsCount", 0, 179, 0, 2, options);
-    projectsCount.start();
-    var waypoint = new Waypoint({
-    element: document.getElementById('contributions'),
-    handler: function(direction) {
-      if(direction === 'down' || direction === 'up') {
-        commitsCount.reset();
-        commitsCount.start(); 
-        mergedPRsCount.reset();
-        mergedPRsCount.start();
-        projectsCount.reset();
-        projectsCount.start();
-      }
-    },
-    offset: '35%'
-    });
+ 
 		
    function timeDifference(rawTime) {
     var now = new Date();
@@ -85,8 +58,56 @@ $(document).ready(function(){
       contributorNode.innerHTML += contributorText.textContent;
       repoNode.innerHTML += repoText.textContent;
     }
-   updateContributor('andela-kerinoso', 'https://github.com/teamtaverna/core/pull/102');
-   timeSinceLastCommit("2016-09-29T15:52:11.000Z");
+	
+	  var options = {
+     useEasing : true, 
+     useGrouping : true, 
+     separator : ',', 
+     decimal : '.', 
+     prefix : '', 
+     suffix : '' 
+   };
+		
+    var apiURL = 'https://andela-github-server.herokuapp.com/';
+
+	 function fetchData () {
+	   var xhr = new XMLHttpRequest();
+		 xhr.open('GET', apiURL);
+		 xhr.onload = function() {
+      var events = JSON.parse(xhr.responseText);
+      console.log(events);
+			updateContributor(events.last_update_made_by, events.last_updated_link);
+    	timeSinceLastCommit(events.last_updated);
+			var commitsCount = new CountUp("commitsCount", 0, events.stats.commits, 0, 6, options);
+      commitsCount.start();
+      var mergedPRsCount = new CountUp("mergedPRsCount", 0, events.stats.merged, 0, 4, options);
+      mergedPRsCount.start();
+      var projectsCount = new CountUp("projectsCount", 0, events.stats.projects, 0, 2, options);
+      projectsCount.start();
+      var waypoint = new Waypoint({
+      element: document.getElementById('contributions'),
+      handler: function(direction) {
+				if(direction === 'down' || direction === 'up') {
+					commitsCount.reset();
+					commitsCount.start(); 
+					mergedPRsCount.reset();
+					mergedPRsCount.start();
+					projectsCount.reset();
+					projectsCount.start();
+				}
+			},
+    	offset: '35%'
+    });
+		 }
+		 xhr.send();
+		}
+    fetchData();
+    setInterval(function() {
+		  fetchData ();	
+		}, 1000 * 60 * 60 );
+
+
+
 });
 
 

@@ -18,102 +18,165 @@ a {
 /* Navbar
 // –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.logo {
-  width: 13rem;
-}
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  background-image: url(../images/hero.png);
 
-.btn {
-  background: white;
-  padding: 10px 25px;
-  color: #527ae5 !important;
-  border-color: #527ae5;
-  border-radius: 4px;
-  font-weight: 400;
-  height: 43px;
-  text-transform: uppercase;
-  a {
-    &:hover {
-      text-decoration: none;
+
+  #navbar {
+    margin-top: 1rem;
+  }
+
+  nav {
+    background:transparent;
+    background-image:none;
+    border-color:transparent;
+    box-shadow:none;
+    margin-bottom: 0;
+
+    .nav-container {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-nav {
+
+      .what-we-do {
+        margin-right: .5rem;
+
+        &:after {
+          content: '';
+          display: block;
+          height: 25px;
+          width: 1px;
+          position: absolute;
+          top: 50%;
+          left: 85%;
+          background-color: #cfcfcf;
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          margin-left: 7px;
+          -webkit-transition: opacity .15s ease-out,background-color .15s ease-out;
+          transition: opacity .15s ease-out,background-color .15s ease-out;
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: #fff;
+        }
+
+        .plus {
+          width: 4px;
+          height: 4px;
+          display: none;
+          position: absolute;
+          top: 50%;
+          right: -2px;
+          margin-top: -2px;
+          z-index: 1;
+          -ms-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      .btn {
+        background: #fff;
+        color: #527ae5;
+        border-color: #527ae5;
+        padding: 1.3rem 2.3rem;
+
+        &:hover {
+          color: #527ae5;
+          background: #fff;
+        }
+      }
+    }
+
+    .logo {
+      width: 13rem;
+    }
+  }
+
+  .banner__content {
+    padding: 5rem 6rem 10rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6em;
+
+    h1 {
+      font-size: 1.7em;
+      font-weight: 700;
+    }
+
+    h4 {
+      color: white;
+      padding: 0px;
+      margin: 0px auto;
+      font-weight: 100;
+      text-align: center;
+      font-size: 2rem;
+      width: 55%;
     }
   }
 }
 
-.vertical_line {
-  border-right: 1px solid white;
-  height: 100%;
-  margin-left: .7rem;
-  margin-right: -.4rem;
-}
-
-nav {
-  position: absolute;
-  max-width: 90%;
-  width: 90%;
-  // margin-left: 9rem;
-
-  .nav-left {
-    float: left;
-    padding: 1em 0 1em 7em;
-  }
-
-  .nav-right {
-    float: right;
-    padding: 1.5em 0em;
-
-    a {
-      margin-left: 1rem;
-      text-decoration: none;
-      color: white;
+@media screen and (max-width: 768px) {
+  .banner {
+    nav .navbar-nav .what-we-do:after {
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-nav {
-    font-size: .7rem;
-    max-width: 100%;
-    width: 90%;
+
+.banner {
+  nav .navbar-nav .what-we-do:after {
+    display: none;
   }
 
-.hero {
-  h4 {
-    color: white;
-    padding: 0px;
-    margin: 0px auto;
-    font-weight: 100;
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
+  .banner__content {
+    padding: 6rem 3rem;
+
+    h4 {
+      color: white;
+      padding: 0px;
+      margin: 0px auto;
+      font-weight: 100;
+      text-align: center;
+      font-size: 2rem;
+      width: 100%;
+      }
     }
   }
 }
 
-.hero {
-  color: white;
-  text-align: center;
-  padding: 115px 60px;
-  font-weight: 400;
-  font-size: 1.6em;
-  background: linear-gradient(rgba(0, 39, 62, 0.45), rgba(0, 39, 62, 0.45)), url(../images/hero.png);
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .banner .banner__content {
+    padding: 6rem 3rem;
 
-  h1 {
-    font-size: 1.7em;
-    font-weight: 700;
-  }
-
-  h4 {
-    color: white;
-    padding: 0px;
-    margin: 0px auto;
-    font-weight: 100;
-    text-align: center;
-    font-size: 2rem;
-    width: 50%;
+    h4 {
+      width: 90%;
+    }
   }
 }
-
 
 
 
@@ -180,11 +243,10 @@ nav {
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .prod-row {
-      flex-direction: column;
-    }
+    // .prod-row {
+    //   flex-direction: column;
+    // }
     .prod-image {
-      text-align: center;
 
       .browser {
         width: 65rem;
@@ -1112,7 +1174,7 @@ background: #34375c;
 }
 
 .count-up {
-  font-size: 3em; 
+  font-size: 3em;
   font-weight: 700;
   color: #848C97;
   font-family: DINPro;

@@ -10,8 +10,8 @@ $(document).ready(function(){
     $(this).children("#hidden_element").hide();
   });
 
- 
-		
+
+
    function timeDifference(rawTime) {
     var now = new Date();
     var time = new Date( rawTime );
@@ -27,7 +27,7 @@ $(document).ready(function(){
             sDate += (years > 1) ? "s " : " ";
             days = days % 365;
         }
-        
+
         var months = Math.floor( days / 30 );
         if (months !== 0 ) {
             sDate += months + " month";
@@ -47,7 +47,13 @@ $(document).ready(function(){
 			var td = document.getElementById('time-difference');
 			td.innerHTML = lastUpdate + ' ' + td.innerHTML;
     }
-    
+
+    function updateRepoName(repo) {
+      var reponame = repo.data;
+      var last_project_repo = reponame.replace('https://github.com/','').split("/");
+      return last_project_repo[0] + '/' + last_project_repo[1];
+    }
+
     function updateContributor(contributor, repo) {
       var contributorText = document.createTextNode(contributor);
       var repoText = document.createTextNode(repo);
@@ -56,18 +62,18 @@ $(document).ready(function(){
       contributorNode.href = 'https://github.com/' + contributorText.textContent;
       repoNode.href += repoText.textContent ;
       contributorNode.innerHTML += contributorText.textContent;
-      repoNode.innerHTML += repoText.textContent;
+      repoNode.innerHTML += updateRepoName(repoText);
     }
-	
+
 	  var options = {
-     useEasing : true, 
-     useGrouping : true, 
-     separator : ',', 
-     decimal : '.', 
-     prefix : '', 
-     suffix : '' 
+     useEasing : true,
+     useGrouping : true,
+     separator : ',',
+     decimal : '.',
+     prefix : '',
+     suffix : ''
    };
-		
+
     var apiURL = 'https://andela-github-server.herokuapp.com/';
 
 	 function fetchData () {
@@ -89,7 +95,7 @@ $(document).ready(function(){
       handler: function(direction) {
 				if(direction === 'down' || direction === 'up') {
 					commitsCount.reset();
-					commitsCount.start(); 
+					commitsCount.start();
 					mergedPRsCount.reset();
 					mergedPRsCount.start();
 					projectsCount.reset();
@@ -103,15 +109,9 @@ $(document).ready(function(){
 		}
     fetchData();
     setInterval(function() {
-		  fetchData ();	
+		  fetchData ();
 		}, 1000 * 60 * 60 );
 
 
 
 });
-
-
-
-
-
-

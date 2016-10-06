@@ -1183,6 +1183,7 @@ background: #34375c;
 
 .projects {
   border: 1px solid #F7941E;
+  cursor: default;
   .card__title {
     color: #F7941E;
   }
@@ -1190,13 +1191,15 @@ background: #34375c;
 
 .pull-requests {
   border: 1px solid #F0405E;
+  cursor: default;
   .card__title {
     color: #F0405E;
   }
 }
 
 .commits {
-   border: 1px solid #77CF42;
+  border: 1px solid #77CF42;
+  cursor: default;
   .card__title {
     color: #77CF42;
   }

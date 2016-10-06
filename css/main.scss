@@ -414,7 +414,7 @@ a {
   margin-bottom: 2rem;
   position: relative;
   display: flex;
-  height: 14rem;
+  height: 15rem;
   color: #fff;
   text-decoration: none;
   overflow-y: hidden;
@@ -445,7 +445,7 @@ a {
 
   .column-description {
     background: rgb(105, 109, 158);
-    padding: 1rem 4rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
     width: 100%;
 
     h4 {
@@ -458,6 +458,10 @@ a {
     }
   }
 
+  .column-arrow {
+    background: rgb(105, 109, 158);
+    padding: 10rem 1.5rem 1rem 0rem;
+  }
 
   .column-icon {
     background: #7d82b3;

@@ -82,7 +82,7 @@ $(document).ready(function(){
 		 xhr.onload = function() {
       var events = JSON.parse(xhr.responseText);
       //console.log(events);
-			updateContributor(events.last_update_made_by, events.last_updated_link);
+			// updateContributor(events.last_update_made_by, events.last_updated_link);
     	// timeSinceLastCommit(events.last_updated);
 			var commitsCount = new CountUp("commitsCount", 0, events.stats.commits, 0, 6, options);
       commitsCount.start();

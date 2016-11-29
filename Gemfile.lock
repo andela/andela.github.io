@@ -141,6 +141,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 105)
+  json
   rake
 
 BUNDLED WITH

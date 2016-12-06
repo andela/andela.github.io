@@ -19,7 +19,7 @@ repository: andela/fruitjuice
 
 # Build settings
 markdown: kramdown
-gems: ['jekyll-github-metadata']
+gems: ['jekyll-github-metadata', 'jekyll-redirect-from']
 
 
 # Accessing github metadata
